@@ -1,0 +1,124 @@
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
+/*==========  section territory-complex ==========*/
+.territory-complex {
+  position: relative;
+  z-index: 1; }
+  .territory-complex:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 494px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.73)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.73) 0%, rgba(255, 255, 255, 0) 100%); }
+  .territory-complex h2 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    padding: 79px 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff; }
+  .territory-complex img {
+    width: 100%; }
+
+/*==========  section territory-complex end  ==========*/
+/*==========  section contacts ==========*/
+.contacts {
+  position: relative;
+  width: 100%;
+  padding: 76px 0 74px; }
+
+.contacts-box {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin-left: auto;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(14, 14, 14, 0.1);
+          box-shadow: 0 0 24px 0 rgba(14, 14, 14, 0.1);
+  padding: 49px 90px 52px 50px; }
+  .contacts-box h3 {
+    margin: 0 0 34px; }
+
+.contacts-box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 20px;
+  color: #999;
+  font-size: 17px;
+  line-height: 1.47; }
+  .contacts-box-item a {
+    color: #999; }
+    .contacts-box-item a:hover {
+      color: #68ce63; }
+  .contacts-box-item:last-child {
+    margin: 0; }
+  .contacts-box-item__icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #68ce63;
+    border-radius: 50%;
+    margin-right: 22px; }
+
+.social-box {
+  margin: 37px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #292b2f; }
+  .social-box p {
+    margin-right: 22px; }
+  .social-box .list-social li {
+    margin: 0 10px 0 0; }
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.ymaps-layers-pane {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+/*==========  section contacts end  ==========*/
