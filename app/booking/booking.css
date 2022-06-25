@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Gilroy/Gilroy-Regular.eot");
+    src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"); }
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/Gilroy/Gilroy-Medium.eot");
+    src: url("../fonts/Gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype"); }
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/Gilroy/Gilroy-SemiBold.eot");
+    src: url("../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    src: url("../fonts/Gilroy/Gilroy-ExtraBold.eot");
+    src: url("../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype"); }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy", sans-serif;
+}
+
+button, .btn {
+    outline: none;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: "Gilroy", sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0; }
+button:hover, button:focus, .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold; }
+
+.btn-accent {
+    color: #fff;
+    background: #68ce63;
+    height: 61px;
+    padding: 0 42px; }
+.btn-accent:hover {
+    background: #ef254b;
+    color: inherit; }
+
+
+.neiros-booking {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.neiros-booking__form {
+    width: 100%;
+}
+
+
+.neiros-booking__form-item-dropdown-menu {
+    padding: 30px 40px 45px 38px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 24px 0 rgba(14, 14, 14, 0.36);
+    background-color: #fff;
+    max-width: 857px;
+    width: 100%;
+}
+
+.neiros-booking__form-item-dropdown-menu h3 {
+    margin: 0 0 32px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.datepicker {
+    font-family: "Gilroy", sans-serif;
+    text-transform: lowercase;
+}
+
+.datepicker .ui-widget.ui-widget-content {
+    width: 100% !important;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    display: flex !important;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.datepicker .ui-datepicker .ui-datepicker-header {
+    border: none;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: #000;
+    font-size: 17px;
+    font-family: "Gilroy", sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-title {
+    font-family: "Gilroy", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    margin: 0 auto;
+    line-height: normal;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev, .datepicker .ui-datepicker .ui-datepicker-next {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 9px;
+    height: 14px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    transition: .3s ease;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev {
+    background: url("image/arrow_calendar2.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev:hover {
+    background: url("image/arrow_calendar4.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-next {
+    background: url("image/arrow_calendar1.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    order: 1;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-next:hover {
+    background: url("image/arrow_calendar3.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev span, .datepicker .ui-datepicker .ui-datepicker-next span {
+    display: none;
+}
+
+.datepicker table {
+    font-family: "Gilroy", sans-serif;
+    text-align: center;
+}
+
+.datepicker .ui-datepicker th {
+    line-height: 1.79;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    text-align: center;
+    background: transparent;
+    padding: 9.5px 7px;
+    font-size: 17px;
+    color: #010101;
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: 1;
+}
+
+
+.ui-state-disabled span, .ui-widget-content .ui-state-disabled span, .ui-widget-header .ui-state-disabled span {
+    color: #e0dfdf;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background-color: #68ce63;
+    color: #fff;
+}
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+    width: calc(50% - 60px);
+}
+
+.ui-datepicker-group-first {
+    margin: 0 auto 0 0;
+}

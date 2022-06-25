@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ivanov Station</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="booking.css">
+
+</head>
+
+<body>
+
+<div class="neiros-booking">
+  <form method="post" class="neiros-booking__form">
+    <div class="neiros-booking__form-item">
+      <div class="neiros-booking__form-dropdown"><p>Заезд</p>
+        <div class="neiros-booking__form-dropdown-icon"><img src="image/calendar.png" alt=""></div>
+      </div>
+      <div class="neiros-booking__form-item-dropdown-menu">
+        <h3>Выберите дату заезда</h3>
+
+        <div class="datepicker datepicker1"></div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-accent">Забронировать коттедж</button>
+  </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+<script>
+
+    $( function() {
+        //Сменим язык календаря на русский
+        $.datepicker.setDefaults(
+            {
+                closeText: 'Закрыть',
+                prevText: '',
+                currentText: 'Сегодня',
+                monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+                    'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+                monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+                    'Июл','Авг','Сен','Окт','Ноя','Дек'],
+                dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+                dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+                dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+                weekHeader: 'Не',
+                dateFormat: 'dd.mm.yy',
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ''
+            });
+    });
+
+    $( function() {
+        $( ".datepicker1" ).datepicker({
+            numberOfMonths: 2,
+            showButtonPanel: false,
+            showOtherMonths: true
+        });
+    } );
+</script>
+
+
+</body>
+
+</html>

@@ -3,53 +3,329 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1300px)
+  .cottages-slider__content
+    padding: 20px
+    background: #fff
+    border-radius: 20px
+    min-height: 420px
 
+
+@media only screen and (max-width: 1200px)
+  .logo
+    max-width: 120px
+
+  .name-company
+    font-size: 13px
+    p
+      font-size: 16px
+
+  .menu li
+    margin: 0 20px 0 0
+
+  .cottages-slider__img
+    width: 500px
+    height: 420px
+
+  .cottages-slider__content
+
+    .box-text
+      font-size: 15px
+      line-height: normal
+      p
+        margin: 0 0 20px
+
+  .menu-footer li
+    margin: 0 30px 0 0
+
+  footer
+    padding: 40px 0
+    .logo
+      max-width: 300px
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1100px)
+  .title-wrapper
+    padding: 60px 200px 0
 
+  .sales-box
+    width: 200px
+    height: 185px
+    font-size: 14px
+    padding: 95px 23px 21px
+
+@media only screen and (max-width: 992px)
+  .menu-wrapper
+    display: none
+    position: fixed
+    z-index: 4
+    right: 0
+    top: 0
+    overflow-y: auto
+    height: 100%
+    background: $bg-black
+    padding: 30px
+    width: 100%
+    max-width: 280px
+    .logo
+      display: flex
+      margin: 0 auto 30px
+
+  .btn-close-menu
+    display: block
+
+  .menu
+    flex-direction: column
+    align-items: flex-start
+    li
+      width: 100%
+      margin: 0 0 15px
+    .dropdown-menu
+      margin: 10px 0 0
+      min-width: auto
+      width: 100%
+      position: relative !important
+      border-radius: 0
+      top: 0 !important
+      transform: none !important
+      left: 0 !important
+      background: #4f525a
+      box-shadow: none
+      a
+        color: #fff
+        padding: 8px 15px
+
+  .btn-burger
+    display: flex
+
+  .name-company
+    margin: 0 auto 0 15px
+
+  header
+    min-height: auto
+
+  .wrapper
+    padding: 52px 0 0
+
+  h1
+    font-size: 60px
+
+  .home h1
+    max-width: 670px
+
+  .slogan
+    font-size: 20px
+    margin: 10px auto 30px
+
+  h2
+    font-size: 30px
+
+  .advantages
+    padding: 50px 0
+    h2
+      margin: 0 auto 20px
+    .text-subtitle
+      margin: 0 auto 30px
+
+  .text-subtitle
+    font-size: 18px
+
+  .cottages
+    .text-subtitle
+      margin: 0 auto 40px
+
+  .services
+    padding: 70px 0 40px
+    .text
+      margin: 20px 0 30px
+
+  footer .logo
+    max-width: 250px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 900px)
+  .sales-box
+    left: 50%
+    transform: translate(-50%,0)
+    top: auto
+    bottom: 0
+    right: auto
+
+  .title-wrapper
+    padding: 20px 0 150px
+
+  footer .logo
+    max-width: none
+    order: -1
+    margin: 0 auto 20px
+    img
+      max-width: 200px
+
+  .menu-footer
+    margin: 0 auto 0 0
+    &:last-child
+      margin: 0
+
+  .mb-52
+    margin-bottom: 30px
+
+@media only screen and (max-width: 768px)
+  h1
+    font-size: 40px
+
+  .home
+    padding: 170px 0
+    h1
+      max-width: 500px
+
+  .cottages-section
+    margin: 0 0 50px
+    .slick-prev
+      opacity: 1
+    &:nth-child(odd)
+      .slick-arrow
+        opacity: 1
+
+  .cottages-slider
+    min-width: auto
+    .slide
+      padding: 20px
+      margin: 0 auto
+
+  .cottages-section:after
+    display: none
+
+
+  .cottages-slider__img
+    width: 100%
+
+  .cottages-slider__content
+    width: 100%
+    .box-text
+      max-width: none
+
+  .cottages-slider-nav
+    padding: 0 15px
+
+  .map
+    position: relative
+    top: 0
+    height: 300px
+    order: 1
+
+  .contacts
+    display: flex
+    flex-direction: column
+    padding: 0
+    background: #fff
+
+  .contacts-box
+    border-radius: 0
+    padding: 20px 0
+    width: 100%
+    max-width: none
+    box-shadow: none
+    background: transparent
+
+  .menu-footer
+    width: 100%
+    margin: 0 0 15px
+    justify-content: center
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 576px)
+  .name-company
+    display: none
 
+  .phone
+    font-size: 16px
+
+  .header-contacts
+    margin: 0 auto
+    padding: 0
+    text-align: center
+    &__icon
+      display: none
+
+  .link-modal
+    margin: 0 auto
+
+  h1
+    font-size: 30px
+
+  .home
+    padding: 100px 0
+    h1
+      max-width: 450px
+
+  .slogan
+    font-size: 18px
+
+  h2
+    font-size: 24px
+
+  .slick-arrow
+    width: 45px
+    height: 45px
+
+  .cottages-slider__content h3
+    font-size: 22px
+    margin: 0 0 15px
+
+  .btn-accent
+    height: 50px
+
+  .btn
+    font-size: 16px
+
+  .cottages-section
+    margin: 0 0 30px
+
+  .territory-complex h2
+    padding: 20px 0
+
+  .contacts-box-item__icon
+    margin: 0 10px 0 0
+
+  .copyright
+    width: 100%
+    margin: 15px auto 0
+    order: 1
+    text-align: center
+
+  footer
+    .list-social
+      margin: 0 auto
+
+  .modal-dialog
+    margin: auto
+
+  .modal-content
+    padding: 30px
+
+@media only screen and (max-width: 480px)
+  .title-wrapper
+    h2
+      flex-direction: column
+      align-items: center
+      img
+        order: -1
+        margin: 0 auto 20px
+
+  .contacts-box-item
+    font-size: 16px
+    line-height: normal
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 360px)
+  .logo
+    max-width: 110px
 
+  .wrapper
+    padding: 47px 0 0
 
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .menu-footer
+    font-size: 16px
+    li
+      margin: 0 20px 0 0
