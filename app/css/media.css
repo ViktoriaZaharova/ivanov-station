@@ -122,7 +122,17 @@
     .services .text {
       margin: 20px 0 30px; }
   footer .logo {
-    max-width: 250px; } }
+    max-width: 250px; }
+  .callback-information .map {
+    margin: 30px 0 0;
+    width: 100%;
+    max-width: none; }
+  .callback-information .form {
+    max-width: none; }
+  .contacts-information {
+    margin: 40px 0; }
+    .contacts-information .social-box {
+      margin: 30px 0 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 900px) {
@@ -208,7 +218,11 @@
     margin: 0 0 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .contacts-information .contacts-box-item {
+    margin: 0 0 20px; }
+  .callback-information {
+    margin: 50px 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -262,7 +276,9 @@
   .modal-dialog {
     margin: auto; }
   .modal-content {
-    padding: 30px; } }
+    padding: 30px; }
+  .gallery-section {
+    margin: 50px 0 40px; } }
 
 @media only screen and (max-width: 480px) {
   .title-wrapper h2 {
@@ -280,7 +296,12 @@
       margin: 0 auto 20px; }
   .contacts-box-item {
     font-size: 16px;
-    line-height: normal; } }
+    line-height: normal; }
+  .form-group label {
+    width: 100%;
+    margin: 0 0 16px; }
+    .form-group label:last-child {
+      margin: 0 0 16px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {

@@ -132,6 +132,26 @@ $('.cottages-slider6').slick({
 });
 
 
+$('.cottages-slider7').slick({
+    slidesToShow: 3,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
+    // infinite: false,
+    appendArrows: '.cottages-slider-nav7',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                variableWidth: false,
+            }
+        }
+
+    ]
+});
+
+
 // mobile menu
 $('.btn-burger').on('click', function () {
     $('.overlay').fadeIn();

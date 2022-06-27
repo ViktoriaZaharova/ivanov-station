@@ -21,40 +21,166 @@
 <div class="neiros-booking">
   <form method="post" class="neiros-booking__form">
     <div class="neiros-booking__form-item">
-      <div class="neiros-booking__form-dropdown"><p>Заезд</p>
+      <div class="neiros-booking__form-dropdown">
+        <!--        <input type="text" name="startDate" class="inp-booking">-->
+        <p>Заезд</p>
         <div class="neiros-booking__form-dropdown-icon"><img src="image/calendar.png" alt=""></div>
       </div>
-      <div class="neiros-booking__form-item-dropdown-menu">
+      <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
         <h3>Выберите дату заезда</h3>
-
         <div class="datepicker datepicker1"></div>
       </div>
     </div>
 
+    <div class="neiros-booking__form-item">
+      <div class="neiros-booking__form-dropdown">
+        <!--        <input type="text" name="startDate" class="inp-booking">-->
+        <p>Выезд</p>
+        <div class="neiros-booking__form-dropdown-icon close-dropdown"><img src="image/close-red.png" alt=""></div>
+      </div>
+      <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
+        <h3>Выберите дату выезда</h3>
+        <div class="datepicker datepicker1"></div>
+      </div>
+    </div>
+
+    <div class="neiros-booking__form-item neiros-booking__form-item-last">
+      <div class="neiros-booking__form-dropdown">
+        <!--        <input type="text" name="startDate" class="inp-booking">-->
+        <p>Доп. услуги</p>
+      </div>
+      <div class="neiros-booking__form-item-dropdown-menu">
+        <h3>Выберите дополнительные <br>
+          услуги</h3>
+        <div class="scroll-box-vertical">
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">
+              <span class="checkbox-text__title">Помещение с Боулингом</span>
+              <span class="checkbox-text__sub">для проведения мероприятий</span>
+            </span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">
+              <span class="checkbox-text__title">СПА</span>
+              <span class="checkbox-text__sub">бассейн с противотоком, сауна</span>
+            </span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">
+              <span class="checkbox-text__title">Трансфер</span>
+              <span class="checkbox-text__sub">из аэропорта или ж/д вокзалов</span>
+            </span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">
+              <span class="checkbox-text__title">Квадроциклы</span>
+              <span class="checkbox-text__sub">аренда квадроциклов Сокол</span>
+            </span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="inp-checkbox" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
     <button type="submit" class="btn btn-accent">Забронировать коттедж</button>
+
+    <div class="neiros-booking__dropdown neiros-booking__dropdown-total">
+
+      <div class="neiros-booking__dropdown-head">
+        <div class="neiros-sale">
+          <p>10%</p>
+          <span>Ваша скидка</span>
+        </div>
+
+        <h3>Вы выбрали</h3>
+
+        <ul class="neiros-list-booking">
+          <li>
+            <p>Количество ночей:</p><span>5</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="discount-conditions">
+        <p>При бронировании от 4х суток
+          дополнительная скидка!</p>
+      </div>
+
+      <div class="neiros-booking__dropdown-body">
+        <ul class="neiros-list-booking">
+          <li>
+            <p>Стоимость аренды:</p><span>132 300 ₽</span>
+          </li>
+          <li class="no-sale-price">
+            <p>Цена аренды коттеджа
+              без скидки:</p><span>150 000 ₽</span>
+          </li>
+          <li>
+            <p>Спа:</p><span>1 000 ₽/ч</span>
+          </li>
+          <li>
+            <p>Кинозал:</p><span>3 000 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="neiros-booking__dropdown-footer">
+        <ul class="neiros-list-booking">
+          <li>
+            <p>Предварительная
+              стоимость:</p><span>189 300 ₽</span>
+          </li>
+        </ul>
+      </div>
+    </div>
   </form>
 </div>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="jquery.datepicker.extension.range.min.js"></script>
 
 <script>
 
-    $( function() {
+    $(function () {
         //Сменим язык календаря на русский
         $.datepicker.setDefaults(
             {
                 closeText: 'Закрыть',
                 prevText: '',
                 currentText: 'Сегодня',
-                monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
-                    'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-                monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
-                    'Июл','Авг','Сен','Окт','Ноя','Дек'],
-                dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-                dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-                dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+                monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                    'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+                    'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+                dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+                dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+                dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
                 weekHeader: 'Не',
                 dateFormat: 'dd.mm.yy',
                 firstDay: 1,
@@ -64,13 +190,37 @@
             });
     });
 
-    $( function() {
-        $( ".datepicker1" ).datepicker({
+    $(function () {
+        $(".datepicker1").datepicker({
             numberOfMonths: 2,
             showButtonPanel: false,
-            showOtherMonths: true
+            showOtherMonths: true,
+            dateFormat: 'd M, y',
+            range: 'period',
+            onSelect: function (dateText, inst, extensionRange) {
+                // extensionRange - объект расширения
+                $('[name=startDate]').val(extensionRange.startDateText);
+                $('[name=endDate]').val(extensionRange.endDateText);
+            }
         });
-    } );
+
+        $('.datepicker1').datepicker('setDate', ['+4d', '+8d']);
+
+        // объект расширения (хранит состояние календаря)
+        var extensionRange = $('.datepicker1').datepicker('widget').data('datepickerExtensionRange');
+        if (extensionRange.startDateText) $('[name=startDate]').val(extensionRange.startDateText);
+        if (extensionRange.endDateText) $('[name=endDate]').val(extensionRange.endDateText);
+    });
+
+    $('.neiros-booking__form-item').on('click', function () {
+        $('.neiros-booking__form-item').removeClass('active');
+        $(this).addClass('active');
+
+        if ($('.neiros-booking__form-item-last').hasClass('active')) {
+           $('.neiros-booking__dropdown-total').fadeIn();
+        }
+
+    });
 </script>
 
 
