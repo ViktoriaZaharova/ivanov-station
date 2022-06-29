@@ -49,6 +49,9 @@
   height: 100%
   object-fit: cover
 
+.booking-box
+  iframe
+    width: 100%
 /*==========  section home end  ==========*/
 
 
@@ -66,9 +69,9 @@
     margin: 0 auto 64px
 
 .parallax
-  background: url('../img/advantages-bg.jpg') no-repeat center
-    size: cover
-    attachment: fixed
+  //background: url('../img/advantages-bg.jpg') no-repeat center
+  //  size: cover
+  //  attachment: fixed
   width: 100%
   height: 100%
   position: absolute
@@ -558,3 +561,332 @@
     &:before
       display: none
 /*==========  section gallery-home end  ==========*/
+
+
+/*==========  section equipment rental  ==========*/
+.equipment-rental-home
+  h1
+    max-width: none
+
+.image-bg
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+
+.equipment-rental-advantages
+  h2
+    max-width: none
+
+
+.advantages-box-v2
+  padding: 35px 23px 30px
+
+
+.callback-section
+  padding: 175px 0
+  position: relative
+  color: #fff
+  z-index: 1
+  background: #000
+  &__bg
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    z-index: -1
+    opacity: .3
+
+  .text-subtitle
+    margin: 34px auto 49px
+    max-width: 900px
+  h2
+    max-width: 610px
+    margin: 0 auto
+
+.form-callback
+  button
+    width: 100%
+
+.consent
+  text-align: center
+  margin: 18px auto 0
+  color: #999
+  font-size: 14px
+
+.general-information
+  padding: 106px 0 100px
+  .text-subtitle
+    margin: 34px auto 49px
+  .box-text
+    color: #999
+    font-size: 17px
+    max-width: 390px
+    width: 100%
+    p
+      margin: 0 0 27px
+      &:last-child
+        margin: 0
+  .image-box
+    max-width: 680px
+    margin: 0 0 0 auto
+
+.image-box
+  overflow: hidden
+  width: 100%
+  border-radius: 30px
+  @include d-flex
+  img
+    width: 100%
+
+.image-gallery
+  width: 100%
+  overflow: hidden
+  border-radius: 30px
+  margin: 0 0 40px
+  @include d-flex
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.image-gallery-1
+  height: 300px
+
+.image-gallery-2
+  height: 500px
+
+
+.category-technical
+  .btn-play
+    margin: 30px auto 0 0
+  .text-subtitle
+    margin: 35px auto 50px
+  .cottages-section
+    &:before
+      display: none
+
+
+.instagram-history
+  margin: 100px 0 0
+
+.instagram-history-box
+  width: 100%
+  height: 700px
+  position: relative
+  overflow: hidden
+  z-index: 1
+  @include d-flex
+  align-items: flex-end
+  border-radius: 30px
+  color: #fff
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(25deg, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 100%)
+
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__content
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    padding: 28px 31px
+    .box-text
+      margin: 14px 0 29px
+      font-size: 17px
+      display: none
+      transition: .3s ease
+    h4
+      font-weight: 600
+      font-size: 24px
+
+  &__footer
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    display: none
+    transition: .3s ease
+  .btn-play
+    margin: 0
+  &:hover
+    &:before
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%)
+    .box-text, .instagram-history-box__footer
+      display: flex
+
+/*==========  section equipment rental end  ==========*/
+
+
+
+/*==========  page palace-culture  ==========*/
+.street-section
+  margin: 0 0 60px
+  .title-wrapper
+    padding: 100px 0 53px
+
+.outside-section
+  padding: 0 0 70px
+  .title-wrapper
+    padding: 103px 0 0
+  .text-subtitle
+    margin: 34px auto 52px
+
+.instagram-history-box-v2
+  height: 500px
+
+.callback-section-v2
+  padding: 182px 0
+  color: #292b2f
+  .neiros-booking
+    margin: 0 auto
+  .title-wrapper
+    padding: 0
+  .sales-box
+    top: -182px
+    right: -15px
+  .callback-section__bg
+    opacity: 1
+  .text-subtitle
+    max-width: 1085px
+    margin: 34px auto 45px
+  h2
+    max-width: 760px
+
+.gallery-hidden
+  display: none
+
+
+
+.gallery-box
+  position: relative
+  background: #000
+  overflow: hidden
+  transition: .3s ease
+  @include d-flex
+  color: #fff
+  &:before
+    content: '+'
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    font-size: 60px
+    z-index: 1
+    transition: .3s ease
+    display: none
+  &:hover
+    color: #fff
+    img
+      opacity: .6
+    &:before
+      display: block
+
+.horizontal-scroll-wrapper
+  overflow-x: auto
+  white-space: nowrap
+  padding: 20px 0 0
+  transition: 0.34s linear
+  &::-webkit-scrollbar
+    background: rgba(#292b2f, .2)
+    width: 100%
+    height: 6px
+    border-radius: 3px
+  &::-webkit-scrollbar-thumb
+    background: #292b2f
+    border-radius: 3px
+  .box-wrap
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+
+
+
+.tools-box
+  white-space: normal
+  width: 800px
+  min-width: 800px
+  height: 600px
+  margin: 30px 40px
+  @include d-flex
+  overflow: hidden
+  border-radius: 30px
+  box-shadow: 0 0 21px 0 rgba(14, 14, 14, 0.21)
+  position: relative
+  transition: .3s ease
+  &:hover
+    margin-top: -10px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.cottages-section-reverse
+  .cottages-slider
+    margin-right: auto
+    float: right
+    &:after
+
+.cottages-section-double-reverse
+  .cottages-slider
+    float: none
+    //margin-right:
+
+/*==========  page palace-culture end  ==========*/
+
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+
+
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/

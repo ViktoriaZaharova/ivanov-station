@@ -152,6 +152,7 @@ $('.cottages-slider7').slick({
 });
 
 
+
 // mobile menu
 $('.btn-burger').on('click', function () {
     $('.overlay').fadeIn();
@@ -166,3 +167,21 @@ $('.btn-close-menu, .overlay').on('click', function () {
 
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+
+// scroll horizontal
+$(document).ready(function () {
+    let scrollContainer = document.getElementById("gallery1");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    let scrollContainer2 = document.getElementById("gallery2");
+
+    scrollContainer2.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer2.scrollLeft += evt.deltaY;
+    });
+
+});

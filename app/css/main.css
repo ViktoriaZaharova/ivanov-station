@@ -53,6 +53,9 @@
   -o-object-fit: cover;
      object-fit: cover; }
 
+.booking-box iframe {
+  width: 100%; }
+
 /*==========  section home end  ==========*/
 /*==========  section advantages ==========*/
 .advantages {
@@ -67,9 +70,6 @@
     margin: 0 auto 64px; }
 
 .parallax {
-  background: url("../img/advantages-bg.jpg") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -613,3 +613,353 @@
     display: none; }
 
 /*==========  section gallery-home end  ==========*/
+/*==========  section equipment rental  ==========*/
+.equipment-rental-home h1 {
+  max-width: none; }
+
+.image-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.equipment-rental-advantages h2 {
+  max-width: none; }
+
+.advantages-box-v2 {
+  padding: 35px 23px 30px; }
+
+.callback-section {
+  padding: 175px 0;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  background: #000; }
+  .callback-section__bg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: .3; }
+  .callback-section .text-subtitle {
+    margin: 34px auto 49px;
+    max-width: 900px; }
+  .callback-section h2 {
+    max-width: 610px;
+    margin: 0 auto; }
+
+.form-callback button {
+  width: 100%; }
+
+.consent {
+  text-align: center;
+  margin: 18px auto 0;
+  color: #999;
+  font-size: 14px; }
+
+.general-information {
+  padding: 106px 0 100px; }
+  .general-information .text-subtitle {
+    margin: 34px auto 49px; }
+  .general-information .box-text {
+    color: #999;
+    font-size: 17px;
+    max-width: 390px;
+    width: 100%; }
+    .general-information .box-text p {
+      margin: 0 0 27px; }
+      .general-information .box-text p:last-child {
+        margin: 0; }
+  .general-information .image-box {
+    max-width: 680px;
+    margin: 0 0 0 auto; }
+
+.image-box {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .image-box img {
+    width: 100%; }
+
+.image-gallery {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  margin: 0 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .image-gallery img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.image-gallery-1 {
+  height: 300px; }
+
+.image-gallery-2 {
+  height: 500px; }
+
+.category-technical .btn-play {
+  margin: 30px auto 0 0; }
+
+.category-technical .text-subtitle {
+  margin: 35px auto 50px; }
+
+.category-technical .cottages-section:before {
+  display: none; }
+
+.instagram-history {
+  margin: 100px 0 0; }
+
+.instagram-history-box {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 30px;
+  color: #fff; }
+  .instagram-history-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(25deg, black 0%, rgba(255, 255, 255, 0) 100%); }
+  .instagram-history-box__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .instagram-history-box__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 28px 31px; }
+    .instagram-history-box__content .box-text {
+      margin: 14px 0 29px;
+      font-size: 17px;
+      display: none;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+    .instagram-history-box__content h4 {
+      font-weight: 600;
+      font-size: 24px; }
+  .instagram-history-box__footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: none;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .instagram-history-box .btn-play {
+    margin: 0; }
+  .instagram-history-box:hover:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%); }
+  .instagram-history-box:hover .box-text, .instagram-history-box:hover .instagram-history-box__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+/*==========  section equipment rental end  ==========*/
+/*==========  page palace-culture  ==========*/
+.street-section {
+  margin: 0 0 60px; }
+  .street-section .title-wrapper {
+    padding: 100px 0 53px; }
+
+.outside-section {
+  padding: 0 0 70px; }
+  .outside-section .title-wrapper {
+    padding: 103px 0 0; }
+  .outside-section .text-subtitle {
+    margin: 34px auto 52px; }
+
+.instagram-history-box-v2 {
+  height: 500px; }
+
+.callback-section-v2 {
+  padding: 182px 0;
+  color: #292b2f; }
+  .callback-section-v2 .neiros-booking {
+    margin: 0 auto; }
+  .callback-section-v2 .title-wrapper {
+    padding: 0; }
+  .callback-section-v2 .sales-box {
+    top: -182px;
+    right: -15px; }
+  .callback-section-v2 .callback-section__bg {
+    opacity: 1; }
+  .callback-section-v2 .text-subtitle {
+    max-width: 1085px;
+    margin: 34px auto 45px; }
+  .callback-section-v2 h2 {
+    max-width: 760px; }
+
+.gallery-hidden {
+  display: none; }
+
+.gallery-box {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff; }
+  .gallery-box:before {
+    content: '+';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 60px;
+    z-index: 1;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    display: none; }
+  .gallery-box:hover {
+    color: #fff; }
+    .gallery-box:hover img {
+      opacity: .6; }
+    .gallery-box:hover:before {
+      display: block; }
+
+.horizontal-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0 0;
+  -webkit-transition: 0.34s linear;
+  transition: 0.34s linear; }
+  .horizontal-scroll-wrapper::-webkit-scrollbar {
+    background: rgba(41, 43, 47, 0.2);
+    width: 100%;
+    height: 6px;
+    border-radius: 3px; }
+  .horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #292b2f;
+    border-radius: 3px; }
+  .horizontal-scroll-wrapper .box-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.tools-box {
+  white-space: normal;
+  width: 800px;
+  min-width: 800px;
+  height: 600px;
+  margin: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 21px 0 rgba(14, 14, 14, 0.21);
+          box-shadow: 0 0 21px 0 rgba(14, 14, 14, 0.21);
+  position: relative;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+  .tools-box:hover {
+    margin-top: -10px; }
+  .tools-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.cottages-section-reverse .cottages-slider {
+  margin-right: auto;
+  float: right; }
+
+.cottages-section-double-reverse .cottages-slider {
+  float: none; }
+
+/*==========  page palace-culture end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/
+/*==========  section equipment rental  ==========*/
+/*==========  section equipment rental end  ==========*/

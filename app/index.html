@@ -21,6 +21,12 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <!--  booking-->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="booking/booking.css">
+  <!--  booking end-->
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -32,6 +38,36 @@
 <body>
 
 <div class="wrapper">
+  <div class="result-booking">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <div class="booking-variable">
+            <p>5 ночей в коттедже CLASSIC</p>
+            <span>Доп. услуги: СПА, Кинозал, Боулинг, Капаоке</span>
+          </div>
+
+          <div class="booking-price">
+            <p>Предварительная
+              стоимость:</p>
+
+            <div class="neiros-sale">
+              <p>10%</p>
+              <span>Ваша скидка</span>
+            </div>
+
+            <div class="price-value">189 300 ₽</div>
+          </div>
+
+          <div class="btn-group">
+            <a href="#" class="btn btn-accent btn-sm">Забронировать</a>
+            <a href="#" class="link color-grey btn-cancel">Отменить</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header>
     <div class="container">
       <div class="row">
@@ -107,14 +143,157 @@
             <div class="slogan">Стараемся для Вашего отдыха</div>
           </div>
 
-          <div class="booking-box"></div>
+          <div class="neiros-booking">
+            <form method="post" class="neiros-booking__form">
+              <div class="neiros-booking__form-item">
+                <div class="neiros-booking__form-dropdown">
+                  <!--        <input type="text" name="startDate" class="inp-booking">-->
+                  <p>Заезд</p>
+                  <div class="neiros-booking__form-dropdown-icon"><img src="booking/image/calendar.png" alt=""></div>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
+                  <h3>Выберите дату заезда</h3>
+                  <div class="datepicker datepicker1"></div>
+                </div>
+              </div>
+
+              <div class="neiros-booking__form-item">
+                <div class="neiros-booking__form-dropdown">
+                  <!--        <input type="text" name="startDate" class="inp-booking">-->
+                  <p>Выезд</p>
+                  <div class="neiros-booking__form-dropdown-icon close-dropdown"><img src="booking/image/close-red.png"
+                                                                                      alt=""></div>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
+                  <h3>Выберите дату выезда</h3>
+                  <div class="datepicker datepicker1"></div>
+                </div>
+              </div>
+
+              <div class="neiros-booking__form-item neiros-booking__form-item-last">
+                <div class="neiros-booking__form-dropdown">
+                  <!--        <input type="text" name="startDate" class="inp-booking">-->
+                  <p>Доп. услуги</p>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu">
+                  <h3>Выберите дополнительные <br>
+                    услуги</h3>
+                  <div class="scroll-box-vertical">
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Помещение с Боулингом</span>
+              <span class="checkbox-text__sub">для проведения мероприятий</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">СПА</span>
+              <span class="checkbox-text__sub">бассейн с противотоком, сауна</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Трансфер</span>
+              <span class="checkbox-text__sub">из аэропорта или ж/д вокзалов</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Квадроциклы</span>
+              <span class="checkbox-text__sub">аренда квадроциклов Сокол</span>
+            </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-accent">Забронировать коттедж</button>
+
+              <div class="neiros-booking__dropdown neiros-booking__dropdown-total">
+
+                <div class="neiros-booking__dropdown-head">
+                  <div class="neiros-sale">
+                    <p>10%</p>
+                    <span>Ваша скидка</span>
+                  </div>
+
+                  <h3>Вы выбрали</h3>
+
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Количество ночей:</p><span>5</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="discount-conditions">
+                  <p>При бронировании от 4х суток
+                    дополнительная скидка!</p>
+                </div>
+
+                <div class="neiros-booking__dropdown-body">
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Стоимость аренды:</p><span>132 300 ₽</span>
+                    </li>
+                    <li class="no-sale-price">
+                      <p>Цена аренды коттеджа
+                        без скидки:</p><span>150 000 ₽</span>
+                    </li>
+                    <li>
+                      <p>Спа:</p><span>1 000 ₽/ч</span>
+                    </li>
+                    <li>
+                      <p>Кинозал:</p><span>3 000 ₽</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="neiros-booking__dropdown-footer">
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Предварительная
+                        стоимость:</p><span>189 300 ₽</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+
+
   </section>
 
   <section class="advantages">
-    <div class="parallax"></div>
+    <div class="parallax" style="background: url('img/advantages-bg.jpg') no-repeat center; background-size: cover; background-attachment: fixed"></div>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -233,7 +412,6 @@
         </div>
       </div>
     </div>
-
 
 
     <div class="cottages-section cottages-section1">
@@ -662,7 +840,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Заказать обратный звонок</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-grey.png" alt=""></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-grey.png"
+                                                                                         alt=""></button>
       </div>
       <div class="modal-body">
         <div class="text"><p>Заполните заявку и мы свяжемся <br>
@@ -694,7 +873,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Спасибо!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-grey.png" alt=""></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-grey.png"
+                                                                                         alt=""></button>
       </div>
       <div class="modal-body">
         <div class="text"><p>Ваша заявка принята и уже находится
@@ -716,7 +896,13 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 <script src="js/map.js"></script>
+
 <script src="js/common.js"></script>
+
+<!--booking-->
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="booking/jquery.datepicker.extension.range.min.js"></script>
+<script src="booking/booking.js"></script>
 
 </body>
 

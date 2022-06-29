@@ -65,6 +65,7 @@ a
   transition: .3s ease
   outline: none
   width: fit-content
+
   &:hover, &:focus
     text-decoration: none
 
@@ -82,8 +83,10 @@ input, textarea, select
   background: #f6f6f6
   font-size: 14px
   color: #000
+
   &::placeholder
     color: #999
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -109,20 +112,22 @@ textarea
   min-width: 30px
   border-radius: 50%
   background: #f6f6f6
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 16px
     height: 11px
     transition: .3s ease
 
 .inp-checkbox
   display: none
+
   &:checked
-    ~.checkbox-custom
+    ~ .checkbox-custom
       &:before
         background: url("../img/check-grey.png") no-repeat center
           size: 100%
@@ -131,6 +136,7 @@ label
   display: block
   width: 100%
   margin: 0 0 16px
+
   &:last-child
     margin: 0
 
@@ -158,14 +164,38 @@ button, .btn
   font-size: 18px
   font-weight: bold
 
+
 .btn-accent
   color: #fff
   background: $accent
   height: 61px
   padding: 0 42px
+
   &:hover
     background: $hover
-    color: inherit
+    color: #fff
+
+.btn-border
+  display: flex
+  align-items: center
+  border: 1px solid $accent
+    radius: 20px
+  padding: 0 37px 0 25px
+  color: $accent
+
+  .btn-icon
+    max-width: 16px
+    margin: 0 12px 0 0
+
+  &:hover
+    color: #fff
+
+.btn-sm
+  height: 40px
+  padding: 0 18px
+  border-radius: 20px
+  font-size: 14px
+  font-weight: 600
 
 .svg-icon
   display: inline-block
@@ -215,6 +245,14 @@ h3
 .mb-30
   margin-bottom: 30px
 
+.col-20
+  max-width: 20%
+  flex: 0 0 20%
+  padding: 0 15px
+
+.p-100
+  padding: 100px 0
+
 .color-white
   color: #fff
 
@@ -222,23 +260,33 @@ a.color-white
   &:hover
     color: $accent
 
+.bg-grey
+  background: #f6f6f6
+
+.bg-black
+  color: #fff
+  background: #292b2f
+
 .logo
   @include d-flex
 
 .list-social
   @include d-flex
   flex-wrap: wrap
+
   li
     margin: 0 20px 0 0
+
     &:last-child
       margin: 0
+
     a
       @include d-flex
 
 .text-subtitle
   font-size: 22px
   width: 100%
-
+  line-height: 1.45
 
 .slick-slider
   width: 100%
@@ -253,6 +301,7 @@ a.color-white
   position: absolute
   z-index: 1
   top: 50%
+
   &:hover
     background: #292b2f
 
@@ -264,3 +313,187 @@ a.color-white
 
 .slick-disabled
   opacity: 0
+
+.btn-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle)
+  border-radius: 20px
+
+.color-grey
+  color: #999
+
+a.color-grey
+  &:hover
+    color: $hover
+
+
+.btn-play
+  display: flex
+  align-items: center
+  position: relative
+  color: #000
+  font-size: 17px
+
+  &:hover
+    color: $accent
+
+  &__icon
+    @include d-flex
+    position: relative
+    margin: 0 0 0 6px
+    width: 110px
+    height: 110px
+    transition: .3s ease
+    animation: coccoc-alo-circle-img-anim 1.4s infinite ease-in-out
+
+    &:before
+      content: ''
+      position: absolute
+      border: 2px solid $accent
+        radius: 50%
+      width: 100%
+      height: 100%
+      animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out
+      overflow: hidden
+      background: transparent
+      transition: all .5s
+
+    &:after
+      content: ''
+      position: absolute
+      width: 70px
+      height: 70px
+      background: $accent
+      border-radius: 50%
+      animation: coccoc-alo-circle-fill-anim 2s infinite ease-in-out
+      overflow: hidden
+      transition: all .5s
+
+    span
+      display: inline-block
+      clip-path: polygon(0 0, 0% 100%, 100% 50%)
+      width: 19px
+      height: 23px
+      background: $accent
+
+.btn-play-grey
+  color: #fefffe
+  font-size: 14px
+
+  .btn-play__icon
+    width: 56px
+    height: 56px
+    opacity: .5
+
+    &:before
+      width: 100%
+      height: 100%
+      border-color: #fff
+
+    &:after
+      width: 36px
+      height: 36px
+      background: #fff
+
+    span
+      background: #fff
+      width: 9px
+      height: 11px
+
+.btn-play-white
+  color: #fff
+
+  .btn-play__icon
+    opacity: .8
+
+    &:before
+      border-color: #fff
+
+    &:after
+      background: #fff
+
+    span
+      background: #fff
+
+
+.btn-play-abs
+  position: absolute
+  right: 0
+  top: 63px
+
+@keyframes coccoc-alo-circle-anim
+  0%
+    transform: rotate(0) scale(0.2) skew(1deg)
+    opacity: 0.4
+
+  30%
+    transform: rotate(0) scale(0.7) skew(1deg)
+    opacity: 0.9
+
+  100%
+    transform: rotate(0) scale(1) skew(1deg)
+    opacity: 0.4
+
+
+@keyframes coccoc-alo-circle-fill-anim
+  0%
+    transform: rotate(0) scale(0.7) skew(1deg)
+    opacity: 0.2
+
+  50%
+    transform: rotate(0) scale(1) skew(1deg)
+    opacity: 0.2
+
+  100%
+    transform: rotate(0) scale(0.7) skew(1deg)
+    opacity: 0.2
+
+
+@keyframes coccoc-alo-circle-img-anim
+  0%
+    transform: rotate(0) scale(1) skew(1deg)
+
+  10%
+    transform: rotate(-25deg) scale(1) skew(1deg)
+
+  20%
+    transform: rotate(25deg) scale(1) skew(1deg)
+
+  30%
+    transform: rotate(-25deg) scale(1) skew(1deg)
+
+  40%
+    transform: rotate(25deg) scale(1) skew(1deg)
+
+  50%
+    transform: rotate(0) scale(1) skew(1deg)
+
+  100%
+    transform: rotate(0) scale(1) skew(1deg)
+
+.btn-scroll-down
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+  color: #000
+  font-size: 18px
+  font-weight: bold
+  margin: 60px auto 40px
+  &__text
+    max-width: 160px
+    margin: 0 auto
+  &__icon
+    @include d-flex
+    margin: 14px auto 0
+    height: 50px
+    width: 30px
+    border-radius: 15px
+    background: #68ce63
+  &:hover
+    color: $accent
+
