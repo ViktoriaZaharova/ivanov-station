@@ -211,21 +211,26 @@
     opacity: 0; }
   .cottages-section .slick-next {
     opacity: 1; }
-  .cottages-section:nth-child(odd) .cottages-slider {
-    margin-right: auto;
-    float: right; }
-  .cottages-section:nth-child(odd) .slick-next {
-    opacity: 0; }
-  .cottages-section:nth-child(odd) .slick-prev {
-    opacity: 1; }
-  .cottages-section:nth-child(odd):before {
-    left: auto;
-    right: 0; }
-  .cottages-section:nth-child(odd):after {
-    right: auto;
-    left: 0;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(white));
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 100%); }
+
+.cottages-section-reverse .cottages-slider {
+  margin-right: auto;
+  float: right; }
+
+.cottages-section-reverse .slick-next {
+  opacity: 0; }
+
+.cottages-section-reverse .slick-prev {
+  opacity: 1; }
+
+.cottages-section-reverse:before {
+  left: auto;
+  right: 0; }
+
+.cottages-section-reverse:after {
+  right: auto;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 100%); }
 
 .cottages-section1:before {
   height: 1210px;
@@ -847,41 +852,6 @@
 .gallery-hidden {
   display: none; }
 
-.gallery-box {
-  position: relative;
-  background: #000;
-  overflow: hidden;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff; }
-  .gallery-box:before {
-    content: '+';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 60px;
-    z-index: 1;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-    display: none; }
-  .gallery-box:hover {
-    color: #fff; }
-    .gallery-box:hover img {
-      opacity: .6; }
-    .gallery-box:hover:before {
-      display: block; }
-
 .horizontal-scroll-wrapper {
   overflow-x: auto;
   white-space: nowrap;
@@ -907,7 +877,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-.tools-box {
+.gallery-box {
   white-space: normal;
   width: 800px;
   min-width: 800px;
@@ -928,21 +898,33 @@
           box-shadow: 0 0 21px 0 rgba(14, 14, 14, 0.21);
   position: relative;
   -webkit-transition: .3s ease;
-  transition: .3s ease; }
-  .tools-box:hover {
-    margin-top: -10px; }
-  .tools-box img {
+  transition: .3s ease;
+  background: #000;
+  color: #fff; }
+  .gallery-box:before {
+    content: '+';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 60px;
+    z-index: 1;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    display: none; }
+  .gallery-box:hover {
+    margin-top: -10px;
+    color: #fff; }
+    .gallery-box:hover img {
+      opacity: .6; }
+    .gallery-box:hover:before {
+      display: block; }
+  .gallery-box img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
-
-.cottages-section-reverse .cottages-slider {
-  margin-right: auto;
-  float: right; }
-
-.cottages-section-double-reverse .cottages-slider {
-  float: none; }
 
 /*==========  page palace-culture end  ==========*/
 /*==========  section equipment rental  ==========*/

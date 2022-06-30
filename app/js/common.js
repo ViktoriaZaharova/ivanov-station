@@ -177,11 +177,16 @@ $(document).ready(function () {
         scrollContainer.scrollLeft += evt.deltaY;
     });
 
+
+});
+
+$(document).ready(function () {
     let scrollContainer2 = document.getElementById("gallery2");
 
     scrollContainer2.addEventListener("wheel", (evt) => {
         evt.preventDefault();
         scrollContainer2.scrollLeft += evt.deltaY;
     });
+
 
 });
