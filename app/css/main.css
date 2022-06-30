@@ -255,6 +255,7 @@
   -webkit-box-shadow: 0 0 21px 0 rgba(14, 14, 14, 0.21);
           box-shadow: 0 0 21px 0 rgba(14, 14, 14, 0.21);
   overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,12 +265,79 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .cottages-slider__img:hover img {
+    opacity: .3; }
   .cottages-slider__img img {
     border-radius: 30px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.dropdown-tooltip {
+  position: absolute;
+  top: 132px;
+  left: 58px; }
+  .dropdown-tooltip:hover .dropdown-tooltip-wrapper {
+    display: block; }
+
+.dropdown-tooltip-wrapper {
+  margin: 0 0 0 76px;
+  border-radius: 25.5px;
+  -webkit-box-shadow: 5px 8.7px 24px 0 rgba(14, 14, 14, 0.35);
+          box-shadow: 5px 8.7px 24px 0 rgba(14, 14, 14, 0.35);
+  background-color: rgba(41, 43, 47, 0.92);
+  max-width: 290px;
+  width: 100%;
+  min-width: 290px;
+  color: #fefefe;
+  line-height: 1.29;
+  padding: 24px 25px;
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 80px;
+  display: none; }
+
+.dropdown-tooltip-dots {
+  border: solid 2px #68ce63;
+    border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 26px;
+  height: 26px; }
+  .dropdown-tooltip-dots:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #68ce63;
+    width: 18px;
+    height: 18px; }
+
+.dropdown-tooltip2 {
+  right: 100px;
+  bottom: 193px;
+  top: auto;
+  left: auto; }
+  .dropdown-tooltip2 .dropdown-tooltip-wrapper {
+    left: auto;
+    right: 80px; }
 
 .cottages-slider__content {
   width: 472px;
