@@ -190,6 +190,13 @@ button, .btn
   &:hover
     color: #fff
 
+.btn-border-grey
+  border: solid 1px rgba(#fff, .1)
+  color: rgba(255, 255, 255, 0.3)
+  .btn-icon
+    filter: brightness(0) invert(1)
+    opacity: .3
+
 .btn-sm
   height: 40px
   padding: 0 18px
@@ -236,6 +243,9 @@ h3
   font-size: 26px
   font-weight: 600
 
+.mb-100
+  margin-bottom: 100px
+
 .mb-52
   margin-bottom: 52px
 
@@ -252,6 +262,10 @@ h3
 
 .p-100
   padding: 100px 0
+  
+.section
+  background: #fff
+
 
 .color-white
   color: #fff
@@ -424,6 +438,18 @@ a.color-grey
   right: 0
   top: 63px
 
+.btn-play-accent
+  color: $accent
+  .btn-play__icon
+    width: 56px
+    height: 56px
+    &:after
+      width: 36px
+      height: 36px
+    span
+      width: 9px
+      height: 11px
+
 @keyframes coccoc-alo-circle-anim
   0%
     transform: rotate(0) scale(0.2) skew(1deg)
@@ -474,7 +500,7 @@ a.color-grey
   100%
     transform: rotate(0) scale(1) skew(1deg)
 
-.btn-scroll-down
+.btn-scroll
   display: flex
   flex-direction: column
   align-items: center
@@ -485,7 +511,7 @@ a.color-grey
   font-weight: bold
   margin: 60px auto 40px
   &__text
-    max-width: 160px
+    max-width: 200px
     margin: 0 auto
   &__icon
     @include d-flex

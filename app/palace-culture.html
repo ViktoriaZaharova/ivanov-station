@@ -40,7 +40,6 @@
 
 <div class="wrapper">
 
-
   <header>
     <div class="container">
       <div class="row">
@@ -101,11 +100,10 @@
     </div>
   </header>
 
-  <section class="home equipment-rental-home palace-culture-home">
-    <!--    <video loop muted autoplay poster="img/cottage-slide7.jpg" class="fullscreen-bg__video">-->
-    <!--      <source src="video/video-bg.mp4" type="video/mp4">-->
-    <!--    </video>-->
-    <img src="img/palace-culture-bg.jpg" alt="" class="image-bg">
+  <section class="home equipment-rental-home palace-culture-home section-parallax-video">
+        <video loop muted autoplay poster="img/palace-culture-bg.jpg" class="fullscreen-bg__video">
+          <source src="video/video-bg.mp4" type="video/mp4">
+        </video>
 
     <div class="container">
       <div class="row">
@@ -264,9 +262,8 @@
     </div>
   </section>
 
-  <section class="advantages equipment-rental-advantages">
-    <div class="parallax"
-         style="background: url('img/palace-adv-bg.jpg') no-repeat center; background-size: cover; background-attachment: fixed"></div>
+  <section class="advantages equipment-rental-advantages" style="background: url('img/palace-adv-bg.jpg') no-repeat center; background-size: cover; background-attachment: fixed">
+
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -440,7 +437,7 @@
     </div>
   </section>
 
-  <section class="street-section">
+  <section class="street-section section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -498,7 +495,7 @@
     </div>
   </section>
 
-  <section class="instagram-history outside-section bg-black">
+  <div class="instagram-history outside-section bg-black section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -601,9 +598,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="category-technical bg-grey p-100">
+  <section class="category-technical bg-grey p-100 section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -615,55 +612,48 @@
       </div>
     </div>
 
-    <div class="cottages-section cottages-section1">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="cottages-slider cottages-slider1">
-              <div class="slide">
-                <div class="cottages-slider__content">
-                  <h3>Огромная СПА зона</h3>
-                  <div class="box-text">
-                    <p>Тут будет текст про большую зону отдыха на первом
-                      этаже коттеджа, который раскажет о достоинствах
-                      раскошной СПА зоны, в которой имеется финская
-                      сауна и хамам, бассейн 11 метров с противотоком.</p>
+    <div class="cottages-section">
+      <div class="cottages-slider cottages-slider1">
+        <div class="slide">
+          <div class="cottages-slider__content">
+            <h3>Огромная СПА зона</h3>
+            <div class="box-text">
+              <p>Тут будет текст про большую зону отдыха на первом
+                этаже коттеджа, который раскажет о достоинствах
+                раскошной СПА зоны, в которой имеется финская
+                сауна и хамам, бассейн 11 метров с противотоком.</p>
 
-                    <p>Еще немного текста про гбольшую зону отдыха на
-                      первом этаже коттеджа.</p>
+              <p>Еще немного текста про гбольшую зону отдыха на
+                первом этаже коттеджа.</p>
 
-                    <p>И еще немного текста, о том что из из зоны отдыха
-                      можно попасть в транажерный зал с
-                      профессиональными тренажерами.
-                    </p>
-                  </div>
-
-                  <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play" data-fancybox="video">
-                    <span class="btn-play__text">Видео обзор</span>
-                    <span class="btn-play__icon"><span></span></span>
-                  </a>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide1.jpg" alt=""></div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide2.jpg" alt=""></div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide1.jpg" alt=""></div>
-              </div>
+              <p>И еще немного текста, о том что из из зоны отдыха
+                можно попасть в транажерный зал с
+                профессиональными тренажерами.
+              </p>
             </div>
+
+            <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play" data-fancybox="video">
+              <span class="btn-play__text">Видео обзор</span>
+              <span class="btn-play__icon"><span></span></span>
+            </a>
           </div>
         </div>
+        <div class="slide">
+          <a href="img/palace-slide1.jpg" data-fancybox="palace1" class="cottages-slider__img"><img src="img/palace-slide1.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/palace-slide2.jpg" data-fancybox="palace1" class="cottages-slider__img"><img src="img/palace-slide2.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/palace-slide1.jpg" data-fancybox="palace1" class="cottages-slider__img"><img src="img/palace-slide1.jpg" alt=""></a>
+        </div>
       </div>
-      <div class="cottages-slider-nav cottages-slider-nav1"></div>
     </div>
 
-    <a href="#gallery1" class="btn-scroll-down go_to">
-      <span class="btn-scroll-down__text">Смотреть
+    <a href="#gallery1" class="btn-scroll">
+      <span class="btn-scroll__text">Смотреть
 тренажерный зал</span>
-      <span class="btn-scroll-down__icon"><img src="img/arrow-down.png" alt=""></span>
+      <span class="btn-scroll__icon"><img src="img/arrow-down.png" alt=""></span>
     </a>
 
     <div class="horizontal-scroll-wrapper" id="gallery1">
@@ -735,7 +725,7 @@
                         src="img/palace-gallery5.jpg" alt=""></a>
                   </div>
 
-                  <a href="#" class="btn-play btn-play-grey" data-fancybox="video">
+                  <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play btn-play-grey" data-fancybox="video">
                     <span class="btn-play__text">Есть видео</span>
                     <span class="btn-play__icon"><span></span></span>
                   </a>
@@ -749,7 +739,7 @@
   </section>
 
 
-  <section class="category-technical p-100">
+  <section class="category-technical section p-100">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -761,99 +751,85 @@
         </div>
       </div>
     </div>
-    <div class="cottages-section cottages-section-reverse cottages-section4">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="cottages-slider cottages-slider4" dir="rtl">
-              <div class="slide">
-                <div class="cottages-slider__content">
-                  <h3>Настольный теннис</h3>
-                  <div class="box-text">
-                    <p>Как только вы поднимаетесь на второй этаж, перед
-                      вами открывается большая комната с настольным
-                      профессиональным теннисом Butterfly, ракетки,
-                      шары и все необходимиое есть в этой комнате. Тут
-                      будет еще текст про красивый дизайн комнаты.</p>
+    <div class="cottages-section cottages-section-reverse">
+      <div class="cottages-slider cottages-slider2" dir="rtl">
+        <div class="slide">
+          <div class="cottages-slider__content">
+            <h3>Настольный теннис</h3>
+            <div class="box-text">
+              <p>Как только вы поднимаетесь на второй этаж, перед
+                вами открывается большая комната с настольным
+                профессиональным теннисом Butterfly, ракетки,
+                шары и все необходимиое есть в этой комнате. Тут
+                будет еще текст про красивый дизайн комнаты.</p>
 
-                    <p>И еще немного текста про комнату с настольным
-                      профессиональным теннисом Butterfly, ракетки,
-                      шары и все необходимиое есть в этой комнате.
-                      Может быть еще текст, который опишет достоинсва
-                      данной комнаты.
-                    </p>
-                  </div>
-
-                  <a href="#" class="btn-play" data-fancybox="video">
-                    <span class="btn-play__icon"><span></span></span>
-                    <span class="btn-play__text">Видео обзор</span>
-                  </a>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide5.jpg" alt=""></div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide9.jpg" alt=""></div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide4.jpg" alt=""></div>
-              </div>
+              <p>И еще немного текста про комнату с настольным
+                профессиональным теннисом Butterfly, ракетки,
+                шары и все необходимиое есть в этой комнате.
+                Может быть еще текст, который опишет достоинсва
+                данной комнаты.
+              </p>
             </div>
+
+            <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play" data-fancybox="video">
+              <span class="btn-play__icon"><span></span></span>
+              <span class="btn-play__text">Видео обзор</span>
+            </a>
           </div>
         </div>
-      </div>
-      <div class="cottages-slider-nav cottages-slider-nav4"></div>
-    </div>
-
-    <div class="cottages-section cottages-section3">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="cottages-slider cottages-slider3">
-              <div class="slide">
-                <div class="cottages-slider__content">
-                  <h3>Терраса</h3>
-                  <div class="box-text">
-                    <p>Тут будет текст про раскошную террасу на втором
-                      этаже котеджа, который расскажет о прекрасном
-                      виде с терасы. Еще текст про терасу на 2ом этаже.
-                      Тут будет еще текст про очень красивый дизайн
-                      террасы на втором этаже дома.</p>
-
-                    <p>И еще немного текста про террасу на втором этаже.
-                      Про прекрасный вид с террасы. Может быть еще
-                      будет текст, которые опишет полностью достоинсва
-                      террасы на втором этаже.
-                    </p>
-                  </div>
-
-                  <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play" data-fancybox="video">
-                    <span class="btn-play__text">Видео обзор</span>
-                    <span class="btn-play__icon"><span></span></span>
-                  </a>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide6.jpg" alt=""></div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide7.jpg" alt=""></div>
-              </div>
-              <div class="slide">
-                <div class="cottages-slider__img"><img src="img/palace-slide8.jpg" alt=""></div>
-              </div>
-            </div>
-          </div>
+        <div class="slide">
+          <a href="img/palace-slide5.jpg" data-fancybox="palace2" class="cottages-slider__img"><img src="img/palace-slide5.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/palace-slide9.jpg" data-fancybox="palace2" class="cottages-slider__img"><img src="img/palace-slide9.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/palace-slide4.jpg" data-fancybox="palace2" class="cottages-slider__img"><img src="img/palace-slide4.jpg" alt=""></a>
         </div>
       </div>
-      <div class="cottages-slider-nav cottages-slider-nav3"></div>
     </div>
 
-    <a href="#gallery2" class="btn-scroll-down go_to">
-          <span class="btn-scroll-down__text">Смотреть
+    <div class="cottages-section">
+      <div class="cottages-slider cottages-slider1">
+        <div class="slide">
+          <div class="cottages-slider__content">
+            <h3>Терраса</h3>
+            <div class="box-text">
+              <p>Тут будет текст про раскошную террасу на втором
+                этаже котеджа, который расскажет о прекрасном
+                виде с терасы. Еще текст про терасу на 2ом этаже.
+                Тут будет еще текст про очень красивый дизайн
+                террасы на втором этаже дома.</p>
+
+              <p>И еще немного текста про террасу на втором этаже.
+                Про прекрасный вид с террасы. Может быть еще
+                будет текст, которые опишет полностью достоинсва
+                террасы на втором этаже.
+              </p>
+            </div>
+
+            <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play" data-fancybox="video">
+              <span class="btn-play__text">Видео обзор</span>
+              <span class="btn-play__icon"><span></span></span>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <a href="img/palace-slide6.jpg" data-fancybox="palace3" class="cottages-slider__img"><img src="img/palace-slide6.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/palace-slide7.jpg" data-fancybox="palace3" class="cottages-slider__img"><img src="img/palace-slide7.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/palace-slide8.jpg" data-fancybox="palace3" class="cottages-slider__img"><img src="img/palace-slide8.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#gallery2" class="btn-scroll">
+          <span class="btn-scroll__text">Смотреть
     тренажерный зал</span>
-      <span class="btn-scroll-down__icon"><img src="img/arrow-down.png" alt=""></span>
+      <span class="btn-scroll__icon"><img src="img/arrow-down.png" alt=""></span>
     </a>
     <div class="horizontal-scroll-wrapper" id="gallery2">
       <div class="box-wrap">
@@ -869,7 +845,7 @@
     </div>
   </section>
 
-  <section class="callback-section callback-section-v2">
+  <section class="callback-section callback-section-v2 section">
     <img src="img/callback-bg2.jpg" alt="" class="callback-section__bg">
     <div class="container">
       <div class="row">
@@ -1045,12 +1021,12 @@
       <div class="row">
         <div class="col-12 d-flex align-items-center flex-wrap mb-52">
           <ul class="menu-footer my-ul">
-            <li><a href="#cottages" class="go_to">Коттеджи</a></li>
-            <li><a href="#services" class="go_to">Услуги и развлечения</a></li>
+            <li><a href="#">Коттеджи</a></li>
+            <li><a href="#">Услуги и развлечения</a></li>
           </ul>
           <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
           <ul class="menu-footer my-ul">
-            <li><a href="#booking" class="go_to">Бронь</a></li>
+            <li><a href="#">Бронь</a></li>
             <li><a href="gallery.html">Галерея</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
@@ -1132,8 +1108,8 @@
         integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!--<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>-->
-<!--<script src="js/map.js"></script>-->
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+<script src="js/map.js"></script>
 <script src="js/common.js"></script>
 
 <!--booking-->

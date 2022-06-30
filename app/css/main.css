@@ -43,11 +43,11 @@
   font-size: 32px;
   margin: 33px auto 64px; }
 
+.section-parallax-video {
+  z-index: -1; }
+
 .fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
+  position: fixed;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -68,13 +68,6 @@
     line-height: 1.2; }
   .advantages .text-subtitle {
     margin: 0 auto 64px; }
-
-.parallax {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0; }
 
 .advantages-box {
   position: relative;
@@ -158,35 +151,11 @@
   font-weight: bold;
   color: #fff; }
 
-.cottages-slider-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  width: 100%;
-  padding: 0 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 3; }
-  .cottages-slider-nav .slick-arrow {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    -webkit-transform: none;
-            transform: none; }
-
 .cottages-section {
-  margin: 0 0 97px;
+  margin: 0 0 80px;
   position: relative; }
+  .cottages-section .slick-arrow {
+    z-index: 3; }
   .cottages-section:before {
     content: '';
     position: absolute;
@@ -194,27 +163,17 @@
     top: 50%;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
-    z-index: -1; }
-  .cottages-section:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    height: calc(100% - 40px);
-    width: 335px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
-    z-index: 2; }
+    z-index: 1; }
   .cottages-section .slick-prev {
+    left: 70px;
     opacity: 0; }
   .cottages-section .slick-next {
+    right: 70px;
     opacity: 1; }
-
-.cottages-section-reverse .cottages-slider {
-  margin-right: auto;
-  float: right; }
+  .cottages-section .btn-play-abs {
+    top: -10px; }
+  .cottages-section .box-gallery {
+    margin: 0 auto 0 0; }
 
 .cottages-section-reverse .slick-next {
   opacity: 0; }
@@ -226,11 +185,13 @@
   left: auto;
   right: 0; }
 
-.cottages-section-reverse:after {
-  right: auto;
-  left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(white));
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 100%); }
+.cottages-section-reverse .cottages-slider {
+  padding: 0 15px 0 0; }
+  .cottages-section-reverse .cottages-slider:after {
+    right: auto;
+    left: 0;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(white));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 100%); }
 
 .cottages-section1:before {
   height: 1210px;
@@ -269,11 +230,23 @@
     background-size: 100%; }
 
 .cottages-slider {
-  min-width: 2000px;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  padding: 0 0 0 15px; }
   .cottages-slider .slide {
     margin: 20px 40px 20px 0; }
+  .cottages-slider:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    height: calc(100% - 40px);
+    width: 335px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+    z-index: 2; }
 
 .cottages-slider__img {
   width: 680px;
@@ -300,7 +273,8 @@
 
 .cottages-slider__content {
   width: 472px;
-  padding: 0 21px 0 0; }
+  padding: 0 21px 0 0;
+  position: relative; }
   .cottages-slider__content h3 {
     font-size: 26px;
     font-weight: 600;
@@ -310,7 +284,8 @@
     font-size: 17px;
     line-height: 1.47;
     max-width: 441px;
-    width: 100%; }
+    width: 100%;
+    margin: 0 auto 0 0; }
     .cottages-slider__content .box-text p {
       margin: 0 0 30px; }
       .cottages-slider__content .box-text p:last-child {
@@ -538,25 +513,10 @@
 /*==========  section contacts end  ==========*/
 /*==========  section contacts page  ==========*/
 .contacts-page {
-  padding: 127px 0;
-  height: auto;
-  background: url("../img/contacts-bg.jpg") no-repeat center;
-    background-size: cover;
-  position: relative;
-  z-index: 1;
-  color: #fff; }
-  .contacts-page:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.66);
-    z-index: -1; }
+  padding: 127px 0; }
 
 .contacts-information {
-  margin: 90px 0; }
+  padding: 90px 0 0; }
   .contacts-information h3 {
     margin: 0 0 19px; }
   .contacts-information .contacts-box-item {
@@ -570,7 +530,7 @@
       margin: 0 0 15px; }
 
 .callback-information {
-  margin: 90px 0; }
+  padding: 90px 0; }
   .callback-information .form {
     max-width: 616px;
     margin: 0; }
@@ -606,12 +566,9 @@
 
 /*==========  section contacts page end  ==========*/
 /*==========  section gallery-home  ==========*/
-.gallery-home {
-  background: url("../img/home-bg.jpg") no-repeat center;
-    background-size: cover; }
-
 .gallery-section {
-  margin: 80px 0 100px; }
+  padding: 80px 0 100px;
+  height: auto; }
   .gallery-section .text-subtitle {
     margin: 34px auto 60px; }
   .gallery-section .cottages-section:before {
@@ -622,22 +579,11 @@
 .equipment-rental-home h1 {
   max-width: none; }
 
-.image-bg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
-
 .equipment-rental-advantages h2 {
   max-width: none; }
 
 .advantages-box-v2 {
-  padding: 35px 23px 30px; }
+  padding: 35px 10px 30px; }
 
 .callback-section {
   padding: 175px 0;
@@ -677,6 +623,8 @@
   padding: 106px 0 100px; }
   .general-information .text-subtitle {
     margin: 34px auto 49px; }
+  .general-information h3 {
+    margin: 0 0 30px; }
   .general-information .box-text {
     color: #999;
     font-size: 17px;
@@ -742,7 +690,7 @@
   display: none; }
 
 .instagram-history {
-  margin: 100px 0 0; }
+  padding: 100px 0 0; }
 
 .instagram-history-box {
   width: 100%;
@@ -817,7 +765,7 @@
 /*==========  section equipment rental end  ==========*/
 /*==========  page palace-culture  ==========*/
 .street-section {
-  margin: 0 0 60px; }
+  padding: 0 0 60px; }
   .street-section .title-wrapper {
     padding: 100px 0 53px; }
 
@@ -927,8 +875,38 @@
        object-fit: cover; }
 
 /*==========  page palace-culture end  ==========*/
-/*==========  section equipment rental  ==========*/
-/*==========  section equipment rental end  ==========*/
+/*==========  page classic  ==========*/
+.home-classic h1 {
+  max-width: none; }
+
+.cottages-section-white .cottages-slider__content {
+  color: #fff;
+  position: relative;
+  width: 600px; }
+  .cottages-section-white .cottages-slider__content .box-text {
+    max-width: 510px;
+    color: #fff; }
+
+.cottages-section-white .cottages-slider:after {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#292b2f));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #292b2f 100%); }
+
+.cottages-section-white .cottages-slider .slick-arrow {
+  background: rgba(255, 255, 255, 0.1); }
+
+.cottages-section-white.cottages-section-reverse .cottages-slider:after {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#292b2f));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #292b2f 100%); }
+
+.category-classic {
+  padding: 100px 0 52px; }
+  .category-classic .btn-scroll {
+    margin: 0 auto; }
+
+.category-classic-section {
+  padding: 78px 0 0; }
+
+/*==========  page classic end  ==========*/
 /*==========  section equipment rental  ==========*/
 /*==========  section equipment rental end  ==========*/
 /*==========  section equipment rental  ==========*/

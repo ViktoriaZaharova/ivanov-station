@@ -245,6 +245,14 @@ button, .btn {
   .btn-border:hover {
     color: #fff; }
 
+.btn-border-grey {
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3); }
+  .btn-border-grey .btn-icon {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    opacity: .3; }
+
 .btn-sm {
   height: 40px;
   padding: 0 18px;
@@ -290,6 +298,9 @@ h3 {
   font-size: 26px;
   font-weight: 600; }
 
+.mb-100 {
+  margin-bottom: 100px; }
+
 .mb-52 {
   margin-bottom: 52px; }
 
@@ -308,6 +319,9 @@ h3 {
 
 .p-100 {
   padding: 100px 0; }
+
+.section {
+  background: #fff; }
 
 .color-white {
   color: #fff; }
@@ -516,6 +530,18 @@ a.color-grey:hover {
   right: 0;
   top: 63px; }
 
+.btn-play-accent {
+  color: #68ce63; }
+  .btn-play-accent .btn-play__icon {
+    width: 56px;
+    height: 56px; }
+    .btn-play-accent .btn-play__icon:after {
+      width: 36px;
+      height: 36px; }
+    .btn-play-accent .btn-play__icon span {
+      width: 9px;
+      height: 11px; }
+
 @-webkit-keyframes coccoc-alo-circle-anim {
   0% {
     -webkit-transform: rotate(0) scale(0.2) skew(1deg);
@@ -618,7 +644,7 @@ a.color-grey:hover {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
             transform: rotate(0) scale(1) skew(1deg); } }
 
-.btn-scroll-down {
+.btn-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,10 +663,10 @@ a.color-grey:hover {
   font-size: 18px;
   font-weight: bold;
   margin: 60px auto 40px; }
-  .btn-scroll-down__text {
-    max-width: 160px;
+  .btn-scroll__text {
+    max-width: 200px;
     margin: 0 auto; }
-  .btn-scroll-down__icon {
+  .btn-scroll__icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -655,5 +681,5 @@ a.color-grey:hover {
     width: 30px;
     border-radius: 15px;
     background: #68ce63; }
-  .btn-scroll-down:hover {
+  .btn-scroll:hover {
     color: #68ce63; }

@@ -1,156 +1,57 @@
 // анимированный скролл к блоку
-$('.go_to').click(function (e) {
-    e.preventDefault();
-    var scroll_el = $(this).attr('href');
-    if ($(scroll_el).length !== 0) {
-        $('html, body').animate({
-            scrollTop: $(scroll_el).offset().top
-        }, 500);
-    }
-    return false;
+$(document).ready(function () { //плавный скролл
+    $(".go_to").on("click", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            headerHeight = $('header').height(),
+            top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top - headerHeight}, 500);
+    });
 });
 
 
-
-$('.cottages-slider1').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
-    // infinite: false,
-    appendArrows: '.cottages-slider-nav1',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: false,
+$('.cottages-slider1').each(function() {
+    $(this).slick({
+        slidesToShow: 3,
+        variableWidth: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
+        // infinite: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                }
             }
-        }
 
-    ]
+        ]
+    });
 });
 
 
-$('.cottages-slider2').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
-    // infinite: false,
-    rtl: true,
-    appendArrows: '.cottages-slider-nav2',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: false,
+$('.cottages-slider2').each(function() {
+    $(this).slick({
+        slidesToShow: 3,
+        variableWidth: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
+        // infinite: false,
+        rtl: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                }
             }
-        }
 
-    ]
+        ]
+    });
 });
-
-$('.cottages-slider3').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
-    // infinite: false,
-    appendArrows: '.cottages-slider-nav3',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: false,
-            }
-        }
-
-    ]
-});
-
-$('.cottages-slider4').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
-    // infinite: false,
-    rtl: true,
-    appendArrows: '.cottages-slider-nav4',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: false,
-            }
-        }
-
-    ]
-});
-
-$('.cottages-slider5').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
-    // infinite: false,
-    appendArrows: '.cottages-slider-nav5',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: false,
-            }
-        }
-
-    ]
-});
-
-
-$('.cottages-slider6').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
-    // infinite: false,
-    rtl: true,
-    appendArrows: '.cottages-slider-nav6',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: false,
-            }
-        }
-
-    ]
-});
-
-
-$('.cottages-slider7').slick({
-    slidesToShow: 3,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
-    // infinite: false,
-    appendArrows: '.cottages-slider-nav7',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                variableWidth: false,
-            }
-        }
-
-    ]
-});
-
 
 
 // mobile menu
@@ -177,16 +78,11 @@ $(document).ready(function () {
         scrollContainer.scrollLeft += evt.deltaY;
     });
 
-
-});
-
-$(document).ready(function () {
     let scrollContainer2 = document.getElementById("gallery2");
 
     scrollContainer2.addEventListener("wheel", (evt) => {
         evt.preventDefault();
         scrollContainer2.scrollLeft += evt.deltaY;
     });
-
-
 });
+

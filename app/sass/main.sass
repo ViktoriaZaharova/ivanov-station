@@ -40,11 +40,11 @@
   font-size: 32px
   margin: 33px auto 64px
 
+.section-parallax-video
+  z-index: -1
+
 .fullscreen-bg__video
-  position: absolute
-  top: 0
-  left: 0
-  margin: 0 auto
+  position: fixed
   width: 100%
   height: 100%
   object-fit: cover
@@ -67,16 +67,6 @@
     line-height: 1.2
   .text-subtitle
     margin: 0 auto 64px
-
-.parallax
-  //background: url('../img/advantages-bg.jpg') no-repeat center
-  //  size: cover
-  //  attachment: fixed
-  width: 100%
-  height: 100%
-  position: absolute
-  left: 0
-  top: 0
 
 
 .advantages-box
@@ -148,54 +138,31 @@
   font-weight: bold
   color: #fff
 
-.cottages-slider-nav
-  position: absolute
-  top: 50%
-  left: 0
-  transform: translate(0,-50%)
-  width: 100%
-  padding: 0 70px
-  display: flex
-  align-items: center
-  justify-content: space-between
-  z-index: 3
-  .slick-arrow
-    position: relative
-    top: 0
-    right: 0
-    left: 0
-    transform: none
-
 .cottages-section
-  margin: 0 0 97px
+  margin: 0 0 80px
   position: relative
+  .slick-arrow
+    z-index: 3
   &:before
     content: ''
     position: absolute
     left: 0
     top: 50%
     transform: translate(0,-50%)
-    z-index: -1
-  &:after
-    content: ''
-    position: absolute
-    right: 0
-    top: 50%
-    transform: translate(0,-50%)
-    height: calc(100% - 40px)
-    width: 335px
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
-    z-index: 2
+    z-index: 1
+
   .slick-prev
+    left: 70px
     opacity: 0
   .slick-next
+    right: 70px
     opacity: 1
-
+  .btn-play-abs
+    top: -10px
+  .box-gallery
+    margin: 0 auto 0 0
 
 .cottages-section-reverse
-  .cottages-slider
-    margin-right: auto
-    float: right
   .slick-next
     opacity: 0
   .slick-prev
@@ -203,10 +170,13 @@
   &:before
     left: auto
     right: 0
-  &:after
-    right: auto
-    left: 0
-    background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+  .cottages-slider
+    padding: 0 15px 0 0
+    &:after
+      right: auto
+      left: 0
+      background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+
 
 .cottages-section1
   &:before
@@ -253,11 +223,21 @@
       size: 100%
 
 .cottages-slider
-  min-width: 2000px
   position: relative
   z-index: 2
+  padding: 0 0 0 15px
   .slide
     margin: 20px 40px 20px 0
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    height: calc(100% - 40px)
+    width: 335px
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+    z-index: 2
 
 
 .cottages-slider__img
@@ -276,6 +256,7 @@
 .cottages-slider__content
   width: 472px
   padding: 0 21px 0 0
+  position: relative
   h3
     font-size: 26px
     font-weight: 600
@@ -286,6 +267,7 @@
     line-height: 1.47
     max-width: 441px
     width: 100%
+    margin: 0 auto 0 0
     p
       margin: 0 0 30px
       &:last-child
@@ -486,24 +468,8 @@
 /*==========  section contacts page  ==========*/
 .contacts-page
   padding: 127px 0
-  height: auto
-  background: url("../img/contacts-bg.jpg") no-repeat center
-    size: cover
-  position: relative
-  z-index: 1
-  color: #fff
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    background-color: rgba(0, 0, 0, 0.66)
-    z-index: -1
-
 .contacts-information
-  margin: 90px 0
+  padding: 90px 0 0
   h3
     margin: 0 0 19px
   .contacts-box-item
@@ -517,7 +483,7 @@
       margin: 0 0 15px
 
 .callback-information
-  margin: 90px 0
+  padding: 90px 0
   .form
     max-width: 616px
     margin: 0
@@ -549,13 +515,9 @@
 
 
 /*==========  section gallery-home  ==========*/
-.gallery-home
-  background: url("../img/home-bg.jpg") no-repeat center
-    size: cover
-
-
 .gallery-section
-  margin: 80px 0 100px
+  padding: 80px 0 100px
+  height: auto
   .text-subtitle
     margin: 34px auto 60px
   .cottages-section
@@ -569,15 +531,6 @@
   h1
     max-width: none
 
-.image-bg
-  position: absolute
-  left: 50%
-  top: 50%
-  transform: translate(-50%,-50%)
-  width: 100%
-  height: 100%
-  object-fit: cover
-
 
 .equipment-rental-advantages
   h2
@@ -585,7 +538,7 @@
 
 
 .advantages-box-v2
-  padding: 35px 23px 30px
+  padding: 35px 10px 30px
 
 
 .callback-section
@@ -626,11 +579,14 @@
   padding: 106px 0 100px
   .text-subtitle
     margin: 34px auto 49px
+  h3
+    margin: 0 0 30px
   .box-text
     color: #999
     font-size: 17px
     max-width: 390px
     width: 100%
+
     p
       margin: 0 0 27px
       &:last-child
@@ -676,7 +632,7 @@
 
 
 .instagram-history
-  margin: 100px 0 0
+  padding: 100px 0 0
 
 .instagram-history-box
   width: 100%
@@ -736,7 +692,7 @@
 
 /*==========  page palace-culture  ==========*/
 .street-section
-  margin: 0 0 60px
+  padding: 0 0 60px
   .title-wrapper
     padding: 100px 0 53px
 
@@ -770,10 +726,6 @@
 
 .gallery-hidden
   display: none
-
-
-
-.gallery-box
 
 
 .horizontal-scroll-wrapper
@@ -838,8 +790,39 @@
 
 
 
-/*==========  section equipment rental  ==========*/
-/*==========  section equipment rental end  ==========*/
+/*==========  page classic  ==========*/
+.home-classic
+  h1
+    max-width: none
+
+.cottages-section-white
+  .cottages-slider__content
+    color: #fff
+    position: relative
+    width: 600px
+    .box-text
+      max-width: 510px
+      color: #fff
+  .cottages-slider
+    &:after
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #292b2f 100%)
+    .slick-arrow
+      background: rgba(#fff, .1)
+  &.cottages-section-reverse
+    .cottages-slider
+      &:after
+        background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba($bg-black,1) 100%)
+
+
+.category-classic
+  padding: 100px 0 52px
+  .btn-scroll
+    margin: 0 auto
+
+.category-classic-section
+  padding: 78px 0 0
+
+/*==========  page classic end  ==========*/
 
 
 

@@ -4,7 +4,13 @@
   .gallery-box {
     width: 700px;
     height: 500px;
-    min-width: 700px; } }
+    min-width: 700px; }
+  .cottages-slider:after {
+    width: 200px; }
+  .cottages-section .slick-prev {
+    left: 20px; }
+  .cottages-section .slick-next {
+    right: 20px; } }
 
 @media only screen and (max-width: 1300px) {
   .cottages-slider__content {
@@ -15,7 +21,18 @@
   .gallery-box {
     width: 600px;
     min-width: 600px;
-    height: 450px; } }
+    height: 450px; }
+  .home h1 {
+    font-size: 70px; }
+    .home h1 br {
+      display: none; }
+  .cottages-section-white .cottages-slider__content {
+    background: transparent;
+    width: 500px; }
+    .cottages-section-white .cottages-slider__content .box-text {
+      max-width: none; }
+  .cottages-section .btn-play-abs {
+    top: 5px; } }
 
 @media only screen and (max-width: 1200px) {
   .logo {
@@ -146,7 +163,7 @@
   .callback-information .form {
     max-width: none; }
   .contacts-information {
-    margin: 40px 0; }
+    padding: 40px 0; }
     .contacts-information .social-box {
       margin: 30px 0 0; }
   .col-20 {
@@ -206,23 +223,23 @@
     margin: 0 0 50px; }
     .cottages-section .slick-prev {
       opacity: 1; }
-    .cottages-section:nth-child(odd) .slick-arrow {
-      opacity: 1; }
+  .cottages-section-reverse .slick-arrow {
+    opacity: 1; }
+  .cottages-section-reverse .cottages-slider {
+    padding: 0; }
   .cottages-slider {
-    min-width: auto; }
+    padding: 0; }
     .cottages-slider .slide {
       padding: 20px;
       margin: 0 auto; }
-  .cottages-section:after {
-    display: none; }
-  .cottages-slider__img {
-    width: 100%; }
-  .cottages-slider__content {
-    width: 100%; }
-    .cottages-slider__content .box-text {
-      max-width: none; }
-  .cottages-slider-nav {
-    padding: 0 15px; }
+    .cottages-slider:after {
+      display: none; }
+    .cottages-slider__img {
+      width: 100%; }
+    .cottages-slider__content {
+      width: 100%; }
+      .cottages-slider__content .box-text {
+        max-width: none; }
   .map {
     position: relative;
     top: 0;
@@ -257,7 +274,7 @@
   .contacts-information .contacts-box-item {
     margin: 0 0 20px; }
   .callback-information {
-    margin: 50px 0; }
+    padding: 50px 0; }
   .col-20 {
     max-width: 33.3%;
     -webkit-box-flex: 0;
@@ -276,7 +293,11 @@
   .callback-section-v2 {
     padding: 190px 0 60px; }
     .callback-section-v2 .sales-box {
-      top: -180px; } }
+      top: -180px; }
+  .cottages-section-white .cottages-slider__content {
+    width: 100%; }
+  .category-classic-section {
+    padding: 50px 0 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -304,8 +325,8 @@
   h2 {
     font-size: 24px; }
   .slick-arrow {
-    width: 45px;
-    height: 45px; }
+    width: 30px;
+    height: 30px; }
   .cottages-slider__content h3 {
     font-size: 22px;
     margin: 0 0 15px; }
@@ -333,7 +354,7 @@
   .modal-content {
     padding: 30px; }
   .gallery-section {
-    margin: 50px 0 40px; }
+    padding: 50px 0 40px; }
   .col-20 {
     max-width: 50%;
     -webkit-box-flex: 0;
@@ -346,7 +367,15 @@
   .gallery-box {
     width: 300px;
     min-width: 300px;
-    height: 250px; } }
+    height: 250px; }
+  .mb-100 {
+    margin-bottom: 50px; }
+  .section-parallax-video {
+    z-index: 1;
+    height: auto;
+    overflow: hidden; }
+  .fullscreen-bg__video {
+    position: absolute; } }
 
 @media only screen and (max-width: 480px) {
   .title-wrapper h2 {
@@ -383,7 +412,12 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
     .instagram-history-box__footer .btn {
-      margin: 20px auto 0; } }
+      margin: 20px auto 0; }
+  .cottages-section .btn-play-abs {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 20px auto 0 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
