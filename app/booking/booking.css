@@ -196,6 +196,17 @@ button:hover, button:focus, .btn:hover, .btn:focus {
     position: relative;
 }
 
+.img-close {
+    display: none;
+}
+
+.btn-clear img {
+    display: none;
+}
+
+.btn-clear .img-close {
+    display: block;
+}
 
 .neiros-booking__form-item.active:before {
     content: '';

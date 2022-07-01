@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ivanov Station</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <!--  booking-->
+  <link rel="stylesheet" href="booking-v2/booking.css">
+  <!--  booking end-->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="section-parallax-video">
+    <video loop muted autoplay poster="img/bowling-bg.jpg" class="fullscreen-bg__video">
+      <source src="video/video-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+
+          <div class="name-company">
+            <p>Ivanovstation
+            </p>
+            <span>Коттеджи в аренду</span>
+          </div>
+
+          <div class="menu-wrapper">
+            <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="btn-close-menu"></div>
+            <ul class="menu my-ul">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Коттеджи</a>
+                <div class="dropdown-menu">
+                  <a href="hi-tech.html" class="dropdown-item">Hi Tech</a>
+                  <a href="classic.html" class="dropdown-item">CLASSIC</a>
+                  <a href="modern.html" class="dropdown-item">Modern</a>
+                  <a href="gothic.html" class="dropdown-item">GOTHIC</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги и развлечения </a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Русская баня на дровах</a>
+                  <a href="#" class="dropdown-item">Трансфер</a>
+                  <a href="#" class="dropdown-item">Боулинг</a>
+                  <a href="#" class="dropdown-item">Аренда квадроциклов </a>
+                  <a href="#" class="dropdown-item">Аренда вездеходов</a>
+                  <a href="#" class="dropdown-item">Спа процедуры</a>
+                  <a href="#" class="dropdown-item">Караоке</a>
+                  <a href="#" class="dropdown-item">Бильярд</a>
+                </div>
+              </li>
+              <li><a href="#">Бронь</a></li>
+              <li><a href="gallery.html">Галерея</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="header-contacts">
+            <img src="img/telephone.png" alt="" class="header-contacts__icon">
+            <a href="tel:+79537888484" class="phone">+7 953 788 84 84</a>
+            <a href="#" class="color-white link-modal" data-toggle="modal" data-target="#callModal">обратный звонок</a>
+          </div>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="home home-classic equipment-rental-home palace-culture-home">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="home-content">
+            <h1>Помещение для мероприятий <br>
+              и боулинг</h1>
+
+            <div class="slogan">Позаботьтесь о своем отдыхе и забронируйте помещение прямо сейчас</div>
+          </div>
+
+          <div class="neiros-booking">
+            <form method="post" class="neiros-booking__form">
+              <div class="neiros-booking__form-item">
+                <div class="neiros-booking__form-dropdown">
+                  <p>Дата и время</p>
+                  <div class="neiros-booking__form-dropdown-icon"><img src="img/calendar.png" alt="">
+                    <img src="img/close-red.png" alt="" class="img-close">
+                  </div>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
+                  <h3>Выберите дату заезда</h3>
+                  <div class="neiros-booking__form-item-dropdown-menu-body">
+
+                    <div class="months">
+                      <div class="months-item">июнь 2022 г.</div>
+                      <div class="months-item active">июль 2022 г.</div>
+                      <div class="months-item">август 2022 г.</div>
+                    </div>
+
+                    <div class="days-week">
+                      <div class="days-week-item">пн</div>
+                      <div class="days-week-item">вт</div>
+                      <div class="days-week-item">ср</div>
+                      <div class="days-week-item">чт</div>
+                      <div class="days-week-item">пт</div>
+                      <div class="days-week-item">сб</div>
+                      <div class="days-week-item">вс</div>
+                    </div>
+
+                    <div class="slider-dates">
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">30</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">31</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" checked>
+                          <span class="radio-text">1</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">2</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" disabled>
+                          <span class="radio-text">3</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" disabled>
+                          <span class="radio-text">4</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">5</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">6</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="neiros-booking__form-item-dropdown-menu-footer">
+                    <ul class="list-radio">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">8:00-9:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">9:00-10:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">10:00-12:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">12:00-13:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">13:00-14:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">14:00-15:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">15:00-16:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">16:00-17:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">18:00-19:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">19:00-20:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">20:00-21:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">21:00-22:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">22:00-23:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">23:00-00:00</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="neiros-booking__form-item">
+                <div class="neiros-booking__form-dropdown">
+                  <p>Количество гостей</p>
+                  <div class="neiros-booking__form-dropdown-icon"><img src="img/user.png" alt="">
+                    <img src="img/close-red.png" alt="" class="img-close">
+                  </div>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu neiros-booking__form-item-dropdown-menu-v2">
+                  <h3>Сколько будет гостей?</h3>
+                  <ul class="list-radio">
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">1-3</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">4-6</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">7-9</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">10-12</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">13-15</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">16-18</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="neiros-booking__form-item neiros-booking__form-item-last">
+                <div class="neiros-booking__form-dropdown">
+                  <!--        <input type="text" name="startDate" class="inp-booking">-->
+                  <p>Доп. услуги</p>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu">
+                  <h3>Выберите дополнительные <br>
+                    услуги</h3>
+                  <div class="scroll-box-vertical">
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Помещение с Боулингом</span>
+              <span class="checkbox-text__sub">для проведения мероприятий</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">СПА</span>
+              <span class="checkbox-text__sub">бассейн с противотоком, сауна</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Трансфер</span>
+              <span class="checkbox-text__sub">из аэропорта или ж/д вокзалов</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Квадроциклы</span>
+              <span class="checkbox-text__sub">аренда квадроциклов Сокол</span>
+            </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-accent">Забронировать коттедж</button>
+
+              <div class="neiros-booking__dropdown neiros-booking__dropdown-total">
+
+                <div class="neiros-booking__dropdown-head">
+                  <div class="neiros-sale">
+                    <p>10%</p>
+                    <span>Ваша скидка</span>
+                  </div>
+
+                  <h3>Вы выбрали</h3>
+
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Количество ночей:</p><span>5</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="discount-conditions">
+                  <p>При бронировании от 4х суток
+                    дополнительная скидка!</p>
+                </div>
+
+                <div class="neiros-booking__dropdown-body">
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Стоимость аренды:</p><span>132 300 ₽</span>
+                    </li>
+                    <li class="no-sale-price">
+                      <p>Цена аренды коттеджа
+                        без скидки:</p><span>150 000 ₽</span>
+                    </li>
+                    <li>
+                      <p>Спа:</p><span>1 000 ₽/ч</span>
+                    </li>
+                    <li>
+                      <p>Кинозал:</p><span>3 000 ₽</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="neiros-booking__dropdown-footer">
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Предварительная
+                        стоимость:</p><span>189 300 ₽</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages equipment-rental-advantages"
+           style="background: url('img/bowling-adv-bg.jpg') no-repeat center; background-size: cover; background-attachment: fixed">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Помещение для проведения мероприятий до 18 <br>
+            человек с баром и боулингом на 2 дорожки</h2>
+
+          <div class="text-subtitle">
+            <p>Тут вы найде все, что необходимо для отдыха не только телом, но и душой</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv1.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/house.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Помещение <br>
+                150 м.кв</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv2.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/group.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Расчитан максимум <br>
+                на 18 человек
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv3.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/strike.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Боулинг на 2 <br>
+                дорожки Brunswick</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv4.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/fireplaces.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Каминная зона <br>
+                в центре зала</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv5.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/karaoke.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Караоке AST <br>
+                система</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv6.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/toilet.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Уборная с 2мя <br>
+                туалетами</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv7.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/tv-screen.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Огромный <br>
+                телевизор с 65’</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/bowling-adv8.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/cocktail.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Барная стойка с <br>
+                напитками</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/classic-adv3.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/security-camera.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>Охраняемый <br>
+                комплекс</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 col-20 mb-30">
+          <div class="advantages-box advantages-box-v2">
+            <img src="img/classic-adv10.jpg" alt="" class="advantages-box__bg">
+            <div class="advantages-box__icon"><img src="img/bbq.png" alt=""></div>
+            <div class="advantages-box__text">
+              <p>На территории
+                барбекю беседки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="street-section section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="title-wrapper">
+            <h2>Улица</h2>
+            <div class="text-subtitle">
+              <p>Тут будет небольшой текст про улицу перед коттеджем</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <a href="img/bowling-bg.jpg" data-fancybox="image" class="image-gallery image-gallery-1"><img
+              src="img/bowling-bg.jpg" alt=""></a>
+          <a href="img/classic-img2.jpg" data-fancybox="image" class="image-gallery image-gallery-2"><img
+              src="img/classic-img2.jpg" alt=""></a>
+        </div>
+        <div class="col-12 col-lg-4">
+          <a href="img/classic-img3.jpg" data-fancybox="image" class="image-gallery image-gallery-2"><img
+              src="img/classic-img3.jpg" alt=""></a>
+          <a href="img/classic-img4.jpg" data-fancybox="image" class="image-gallery image-gallery-1"><img
+              src="img/classic-img4.jpg" alt=""></a>
+        </div>
+        <div class="col-12 col-lg-4">
+          <a href="img/classic-img1.jpg" data-fancybox="image" class="image-gallery image-gallery-1"><img
+              src="img/classic-img1.jpg" alt=""></a>
+          <a href="img/classic-img6.jpg" data-fancybox="image" class="image-gallery image-gallery-2"><img
+              src="img/classic-img6.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="category-technical bg-grey p-100 section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Cтол на 16-18 посадочных мест</h2>
+          <div class="text-subtitle">
+            <p>Тут будет небольшой текст про стол на 16-18 посадочных мест</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cottages-section">
+      <div class="cottages-slider cottages-slider1">
+        <div class="slide">
+          <div class="cottages-slider__content">
+            <h3>Большой зал со столом</h3>
+            <div class="box-text">
+              <p>Тут будет текст про стол на 16-18 посадочных мест,
+                который раскажет о достоинствах данного стола,
+                который расчитан на максимум на восемнадцать
+                человек, а так же про уютную атмосфес и дизайн
+                помещения.</p>
+
+              <p>Еще немного текста про стол, который расчитан
+                максимум на восемнадцать человек. Панарамные
+                окна, стильный интерьер и тпю</p>
+
+              <p>И еще немного текста, о том что рядом есть барная
+                стойка со всевозможными напитками и каминая зона,
+                где можно приятно провести время.
+              </p>
+            </div>
+
+            <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play" data-fancybox="video">
+              <span class="btn-play__text">Видео обзор</span>
+              <span class="btn-play__icon"><span></span></span>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <a href="img/bowling-slide1.jpg" data-fancybox="palace1" class="cottages-slider__img"><img
+              src="img/bowling-slide1.jpg" alt="">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="img/bowling-slide1.jpg" data-fancybox="palace1" class="cottages-slider__img"><img
+              src="img/bowling-slide1.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="img/bowling-slide1.jpg" data-fancybox="palace1" class="cottages-slider__img"><img
+              src="img/bowling-slide1.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#gallery1" class="btn-scroll">
+      <span class="btn-scroll__text">Смотреть барную стойку <br>
+с каминной зоной</span>
+      <span class="btn-scroll__icon"><img src="img/arrow-down.png" alt=""></span>
+    </a>
+
+    <div class="horizontal-scroll-wrapper" id="gallery1">
+      <div class="box-wrap">
+        <a href="img/bowling-img1.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img1.jpg" alt=""></a>
+        <a href="img/bowling-img2.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img2.jpg" alt=""></a>
+        <a href="img/bowling-img3.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img3.jpg" alt=""></a>
+        <a href="img/bowling-img1.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img1.jpg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="category-technical general-information category-classic section p-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Боулинг на 2 дорожки Brunswick</h2>
+          <div class="text-subtitle">
+            <p>Тут текст небольшой про настоящий Боулинг на 2 дорожки Brunswick, <br>
+              который написан в две строки</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-52">
+        <div class="col-12 col-lg-5 order-lg-1">
+          <h3>Любители боулинга оценят</h3>
+          <div class="box-text">
+            <p>Боулинг – удивительная игра, одновременно
+              простая и сложная, доступная каждому и
+              требующая определенной сноровки. За азарт и
+              радость побед боулинг любят во всем мире.</p>
+
+            <p>Хотите устроить боулинг-турнир с друзьями или
+              поиграть семьей на лучших дорожках, с самым
+              современным оснащением? Приходите в к нам
+              и проведите отличную игру, которую можно
+              завершить вкусным ужином.
+            </p>
+          </div>
+
+          <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play" data-fancybox="video">
+            <span class="btn-play__text">Видео обзор</span>
+            <span class="btn-play__icon"><span></span></span>
+          </a>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="image-box"><img src="img/bowling-img4.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+
+    <a href="#gallery2" class="btn-scroll">
+          <span class="btn-scroll__text">Смотреть галерею <br>
+боулинга</span>
+      <span class="btn-scroll__icon"><img src="img/arrow-down.png" alt=""></span>
+    </a>
+
+    <div class="horizontal-scroll-wrapper" id="gallery2">
+      <div class="box-wrap">
+        <a href="img/bowling-img5.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img5.jpg" alt=""></a>
+        <a href="img/bowling-img6.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img6.jpg" alt=""></a>
+        <a href="img/bowling-img7.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img7.jpg" alt=""></a>
+        <a href="img/bowling-img1.jpg" class="gallery-box" data-fancybox="image-gallery"><img
+            src="img/bowling-img1.jpg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-5">
+          <h2>Караоке AST система</h2>
+          <div class="text">
+            <p>Караоке – отличное развлечение и прекрасный способ
+              отдохнуть в компании друзей и родственников. Пение
+              поднимает настроение, способствует эмоциональной
+              разрядке, развивает дыхательный аппарат.</p>
+
+            <p>Слово «караоке» переводится с японского как «пустой
+              оркестр». Как можно догадаться, именно жители Страны
+              Восходящего солнца и придумали это развлечение. </p>
+
+            <a href="https://www.youtube.com/embed/rJNBGqiBI7s" class="btn-play btn-play-accent" data-fancybox="video">
+              <span class="btn-play__text">Есть видео</span>
+              <span class="btn-play__icon"><span></span></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-40">
+              <div class="services-card">
+                <img src="img/bowling-img8.jpg" alt="" class="services-card__img">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-40">
+              <div class="services-card">
+                <img src="img/bowling-img9.jpg" alt="" class="services-card__img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-40">
+          <div class="services-card services-card-row">
+            <img src="img/bowling-img10.jpg" alt="" class="services-card__img">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-40">
+          <div class="services-card services-card-row">
+            <img src="img/bowling-img11.jpg" alt="" class="services-card__img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback-section callback-section-v2 section">
+    <img src="img/callback-bg6.jpg" alt="" class="callback-section__bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="title-wrapper">
+            <h2>Понравилось помещение для <br>
+              мероприятий и вы хотите его забронировать?</h2>
+
+            <div class="text-subtitle">
+              <p>Оставьте заявку, наши специалисты вам перезвонят, сориентируют по брони коттеджа, дополнительных
+                услугах и ответят на все интересующие вас вопросы </p>
+            </div>
+
+            <div class="sales-box">
+              <p>При бронировании
+                от 4-х суток
+                дополнительные
+                скидки!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="neiros-booking">
+            <form method="post" class="neiros-booking__form">
+              <div class="neiros-booking__form-item">
+                <div class="neiros-booking__form-dropdown">
+                  <!--        <input type="text" name="startDate" class="inp-booking">-->
+                  <p>Заезд</p>
+                  <div class="neiros-booking__form-dropdown-icon"><img src="booking/image/calendar.png" alt=""></div>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
+                  <h3>Выберите дату заезда</h3>
+                  <div class="datepicker datepicker1"></div>
+                </div>
+              </div>
+
+              <div class="neiros-booking__form-item">
+                <div class="neiros-booking__form-dropdown">
+                  <!--        <input type="text" name="startDate" class="inp-booking">-->
+                  <p>Выезд</p>
+                  <div class="neiros-booking__form-dropdown-icon close-dropdown"><img src="booking/image/close-red.png"
+                                                                                      alt=""></div>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
+                  <h3>Выберите дату выезда</h3>
+                  <div class="datepicker datepicker1"></div>
+                </div>
+              </div>
+
+              <div class="neiros-booking__form-item neiros-booking__form-item-last">
+                <div class="neiros-booking__form-dropdown">
+                  <!--        <input type="text" name="startDate" class="inp-booking">-->
+                  <p>Доп. услуги</p>
+                </div>
+                <div class="neiros-booking__form-item-dropdown-menu">
+                  <h3>Выберите дополнительные <br>
+                    услуги</h3>
+                  <div class="scroll-box-vertical">
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Помещение с Боулингом</span>
+              <span class="checkbox-text__sub">для проведения мероприятий</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">СПА</span>
+              <span class="checkbox-text__sub">бассейн с противотоком, сауна</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Трансфер</span>
+              <span class="checkbox-text__sub">из аэропорта или ж/д вокзалов</span>
+            </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Квадроциклы</span>
+              <span class="checkbox-text__sub">аренда квадроциклов Сокол</span>
+            </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox" class="inp-checkbox" name="checkbox">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">
+              <span class="checkbox-text__title">Русская баня</span>
+              <span class="checkbox-text__sub">с тёплой и холодной купелью</span>
+            </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-accent">Забронировать коттедж</button>
+
+              <div class="neiros-booking__dropdown neiros-booking__dropdown-total">
+
+                <div class="neiros-booking__dropdown-head">
+                  <div class="neiros-sale">
+                    <p>10%</p>
+                    <span>Ваша скидка</span>
+                  </div>
+
+                  <h3>Вы выбрали</h3>
+
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Количество ночей:</p><span>5</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="discount-conditions">
+                  <p>При бронировании от 4х суток
+                    дополнительная скидка!</p>
+                </div>
+
+                <div class="neiros-booking__dropdown-body">
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Стоимость аренды:</p><span>132 300 ₽</span>
+                    </li>
+                    <li class="no-sale-price">
+                      <p>Цена аренды коттеджа
+                        без скидки:</p><span>150 000 ₽</span>
+                    </li>
+                    <li>
+                      <p>Спа:</p><span>1 000 ₽/ч</span>
+                    </li>
+                    <li>
+                      <p>Кинозал:</p><span>3 000 ₽</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="neiros-booking__dropdown-footer">
+                  <ul class="neiros-list-booking">
+                    <li>
+                      <p>Предварительная
+                        стоимость:</p><span>189 300 ₽</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap mb-52">
+          <ul class="menu-footer my-ul">
+            <li><a href="#">Коттеджи</a></li>
+            <li><a href="#">Услуги и развлечения</a></li>
+          </ul>
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+          <ul class="menu-footer my-ul">
+            <li><a href="#">Бронь</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <div class="copyright">© 2021 Все права защищены. Аренда загородных коттеджей</div>
+          <ul class="list-social my-ul">
+            <li><a href="#"><img src="img/vk_2.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter_2.png" alt=""></a></li>
+            <li><a href="#"><img src="img/insta_2.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="overlay"></div>
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Заказать обратный звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-grey.png"
+                                                                                         alt=""></button>
+      </div>
+      <div class="modal-body">
+        <div class="text"><p>Заполните заявку и мы свяжемся <br>
+          с Вами в ближайшее время</p></div>
+
+        <form method="post" class="form">
+          <label>
+            <input type="text" placeholder="Ваше имя" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Ваше телефон*" name="phone">
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox" checked class="inp-checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-accent">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Спасибо!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-grey.png"
+                                                                                         alt=""></button>
+      </div>
+      <div class="modal-body">
+        <div class="text"><p>Ваша заявка принята и уже находится
+          в обработке. Мы свяжемся с Вами
+          в ближайшее время!</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>-->
+<!--<script src="js/map.js"></script>-->
+<script src="js/common.js"></script>
+
+<!--booking-->
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="booking/booking.js"></script>
+
+</body>
+
+</html>

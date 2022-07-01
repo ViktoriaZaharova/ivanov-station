@@ -65,5 +65,14 @@ $(document).mouseup(function (e) {
         && div.has(e.target).length === 0) {
         $('.neiros-booking__form-item').removeClass('active');
         $('.neiros-booking__dropdown-total').fadeOut();
+        $('.neiros-booking__form-dropdown-icon').removeClass('btn-clear');
     }
+});
+
+
+$('.neiros-booking__form-item').each(function () {
+    $(this).find('.datepicker').click(function () {
+        console.log(1);
+        // $(this).parents('.neiros-booking__form-item').find('.neiros-booking__form-dropdown-icon').addClass('btn-clear');
+    });
 });

@@ -44,10 +44,14 @@
   margin: 33px auto 64px; }
 
 .section-parallax-video {
-  z-index: -1; }
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
 
 .fullscreen-bg__video {
-  position: fixed;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -371,6 +375,12 @@
     margin: 39px 0 0;
     line-height: 1.47;
     font-size: 17px; }
+    .services .text p {
+      margin: 0 0 30px; }
+      .services .text p:last-child {
+        margin: 0; }
+    .services .text .btn-play {
+      margin: 18px 0 0; }
 
 .services-card {
   position: relative;
@@ -972,7 +982,7 @@
     margin: 0 auto; }
 
 .category-classic-section {
-  padding: 78px 0 0; }
+  padding: 78px 0 30px; }
 
 /*==========  page classic end  ==========*/
 /*==========  section equipment rental  ==========*/

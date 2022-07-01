@@ -1,0 +1,1026 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-style: normal;
+    src: url("fonts/Gilroy/Gilroy-Regular.eot");
+    src: url("fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-style: normal;
+    src: url("fonts/Gilroy/Gilroy-Medium.eot");
+    src: url("fonts/Gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy/Gilroy-Medium.woff") format("woff"), url("fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-style: normal;
+    src: url("fonts/Gilroy/Gilroy-SemiBold.eot");
+    src: url("fonts/Gilroy/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy/Gilroy-SemiBold.woff") format("woff"), url("fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    src: url("fonts/Gilroy/Gilroy-ExtraBold.eot");
+    src: url("fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff"), url("fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-style: normal;
+    src: url("fonts/Gilroy/Gilroy-ExtraBold.eot");
+    src: url("fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff"), url("fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype"); }
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy", sans-serif;
+}
+
+button, .btn {
+    outline: none;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: "Gilroy", sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover, button:focus, .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-accent {
+    color: #fff;
+    background: #68ce63;
+    height: 61px;
+    padding: 0 42px;
+}
+
+.btn-accent:hover {
+    background: #ef254b;
+    color: inherit;
+}
+
+
+.neiros-booking {
+    max-width: 1170px;
+    width: 100%;
+    margin: 64px auto;
+    position: relative;
+
+}
+
+.neiros-booking__form {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.neiros-booking__form button {
+    max-width: 270px;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.neiros-booking__form-item {
+    flex: 1;
+    position: relative;
+}
+
+.neiros-booking__form-item-last {
+    margin: 0 34px 0 0;
+}
+
+.neiros-booking__form-dropdown {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    overflow: hidden;
+    color: #000;
+    z-index: 1;
+}
+
+.neiros-booking__form-item-last:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+
+
+.neiros-booking__form-item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 40px;
+    background: #999;
+    z-index: 1;
+}
+
+
+.neiros-booking__form-item:nth-child(3):before {
+    display: none;
+}
+
+
+.neiros-booking__form-dropdown-icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-close {
+    display: none;
+}
+
+.btn-clear img {
+    display: none;
+}
+
+.btn-clear .img-close {
+    display: block;
+}
+
+
+.neiros-booking__form-item.active:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 40px;
+    box-shadow: 0 9px 24px 0 rgba(14, 14, 14, 0.64);
+    background-color: #f6f6f6;
+}
+
+
+.neiros-booking__form-item.active .neiros-booking__form-dropdown-icon {
+    display: flex;
+}
+
+.neiros-booking__form-item.active .neiros-booking__form-item-dropdown-menu {
+    display: block;
+}
+
+.inp-booking {
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: #000;
+    padding: 0;
+}
+
+.neiros-booking__form input {
+    font-family: "Gilroy", sans-serif;
+    font-size: 17px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    color: #000;
+    background: transparent;
+}
+
+.neiros-booking__form input::placeholder {
+    color: #000;
+}
+
+.neiros-booking__form-item:first-child .neiros-booking__form-item-dropdown-menu {
+    left: 0;
+    transform: none;
+}
+
+.neiros-booking__form-item-last .neiros-booking__form-item-dropdown-menu {
+    left: auto;
+    right: 0;
+    transform: none;
+}
+
+.neiros-booking__form-item-dropdown-menu {
+    padding: 30px 10px 42px 35px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 24px 0 rgba(14, 14, 14, 0.36);
+    background-color: #fff;
+    max-width: 857px;
+    min-width: 352px;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 100%;
+    display: none;
+    margin: 14px 0 0;
+    color: #000;
+    overflow: hidden;
+}
+
+.neiros-booking-datepicker {
+    min-width: 857px;
+    padding-right: 40px;
+}
+
+.neiros-booking__form-item-dropdown-menu h3 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.datepicker {
+    font-family: "Gilroy", sans-serif;
+    text-transform: lowercase;
+}
+
+.datepicker .ui-widget.ui-widget-content {
+    width: 100% !important;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    display: flex !important;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.datepicker .ui-datepicker .ui-datepicker-header {
+    border: none;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: #000;
+    font-size: 17px;
+    font-family: "Gilroy", sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-title {
+    font-family: "Gilroy", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    margin: 0 auto;
+    line-height: normal;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev, .datepicker .ui-datepicker .ui-datepicker-next {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 9px;
+    height: 14px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    transition: .3s ease;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev {
+    background: url("image/arrow_calendar2.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev:hover {
+    background: url("image/arrow_calendar4.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-next {
+    background: url("image/arrow_calendar1.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    order: 1;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-next:hover {
+    background: url("image/arrow_calendar3.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.datepicker .ui-datepicker .ui-datepicker-prev span, .datepicker .ui-datepicker .ui-datepicker-next span {
+    display: none;
+}
+
+.datepicker table {
+    font-family: "Gilroy", sans-serif;
+    text-align: center;
+}
+
+.datepicker .ui-datepicker th {
+    line-height: 1.79;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    text-align: center;
+    background: transparent;
+    padding: 9.5px 7px;
+    font-size: 17px;
+    color: #010101;
+    border-radius: 8px;
+    width: 100%;
+    height: 38px;
+    margin: 0 auto;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: 1;
+}
+
+.ui-datepicker td {
+    padding: 0;
+    border: none;
+}
+
+.ui-state-disabled span, .ui-widget-content .ui-state-disabled span, .ui-widget-header .ui-state-disabled span {
+    color: #e0dfdf;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color: #000;
+    background: rgba(104, 206, 99, .1);
+    border-radius: 0;
+}
+
+.selected-end .ui-state-active, .selected-start .ui-state-active {
+    background-color: #68ce63;
+    color: #fff;
+}
+
+.selected-start .ui-state-active {
+    border-radius: 8px 0 0 8px;
+}
+
+.selected-end .ui-state-active {
+    border-radius: 0 8px 8px 0;
+}
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+    width: calc(50% - 60px);
+}
+
+.ui-datepicker-group-first {
+    margin: 0 auto 0 0;
+}
+
+
+.checkbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Gilroy', sans-serif;
+    color: #000;
+    margin: 0 0 22px;
+}
+
+.checkbox:last-child {
+    margin: 0;
+}
+
+.inp-checkbox {
+    display: none;
+}
+
+.inp-checkbox:checked ~ .checkbox-custom {
+    background: #68ce63;
+}
+
+.inp-checkbox:checked ~ .checkbox-custom:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 21px;
+    height: 15px;
+    background: url("image/check.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.checkbox-custom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 17px 0 0;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
+
+.checkbox-text__sub {
+    display: block;
+    margin: 3px 0 0;
+    color: #999;
+    font-size: 14px;
+}
+
+
+.scroll-box-vertical {
+    overflow-y: auto;
+    height: 294px;
+}
+
+.scroll-box-vertical::-webkit-scrollbar {
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    width: 6px;
+}
+
+.scroll-box-vertical::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #68ce63;
+}
+
+.neiros-booking__dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 3;
+    margin: 4px 0 0;
+    border-radius: 40px;
+    box-shadow: 0 4px 24px 0 rgba(14, 14, 14, 0.36);
+    background-color: #fff;
+    max-width: 300px;
+    width: 100%;
+    padding: 16px 0;
+    display: none;
+    color: #000;
+}
+
+.neiros-list-booking {
+    width: 100%;
+    list-style: none;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+.neiros-list-booking li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 20px;
+}
+
+.neiros-list-booking li:last-child {
+    margin: 0;
+}
+
+.neiros-list-booking li p {
+    min-width: 175px;
+    max-width: 175px;
+    padding: 0 10px 0 0;
+    margin: 0;
+}
+
+.neiros-list-booking li span {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.no-sale-price {
+    font-size: 14px;
+}
+
+.neiros-list-booking .no-sale-price span {
+    color: #999;
+    font-weight: normal;
+    display: block;
+    text-decoration: line-through;
+}
+
+.neiros-booking__dropdown-head {
+    padding: 0 16px 15px 25px;
+}
+
+.neiros-booking__dropdown-body {
+    padding: 0 24px;
+}
+
+.neiros-booking__dropdown-footer {
+    padding: 20px 24px 22px;
+    position: relative;
+    margin: 19px 0 0;
+}
+
+.neiros-booking__dropdown-footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: calc(100% - 48px);
+    height: 1px;
+    transform: translate(-50%,0);
+    background: #e0dfdf;
+    box-shadow: 0px 4px 24px 0 rgba(14, 14, 14, 0.36);
+}
+
+.discount-conditions {
+    padding: 5px 24px;
+    color: #999;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    margin: 0 0 17px;
+}
+
+.neiros-sale {
+    color: #fff;
+    margin: 0 0 0 auto;
+    border-radius: 19px;
+    box-shadow: 0px 4px 24px 0 rgba(14, 14, 14, 0.36);
+    background-color: #ef254b;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 7px 16px 6px 17px;
+}
+
+.neiros-sale p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 7px 0 0;
+}
+
+.neiros-sale span {
+    max-width: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.neiros-booking__dropdown h3 {
+    margin: 0 0 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result-booking {
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 0 24px 0 rgba(14, 14, 14, 0.36);
+    background-color: #fff;
+    padding: 10px 0;
+    color: #000;
+}
+
+.booking-variable {
+    color: #999;
+    font-size: 14px;
+}
+
+.booking-variable p {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+}
+
+.booking-price {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.booking-price > p {
+    margin: 0 12px 0 0;
+    max-width: 120px;
+}
+
+.price-value {
+    margin: 0 0 0 11px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.btn-cancel {
+    margin: 0 0 0 8px;
+}
+
+.result-booking .btn-group {
+    font-size: 14px;
+}
+
+.result-booking .btn {
+    height: 40px;
+}
+
+.neiros-booking__form-item-dropdown-menu-footer {
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 20px 23px 0;
+}
+
+.list-radio {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.list-radio li {
+    padding: 0 7px;
+    flex: 1;
+    margin: 0 0 14px;
+}
+
+.radio {
+    position: relative;
+    transition: .3s ease;
+    text-align: center;
+    color: #010101;
+    font-size: 14px;
+    font-family: "Gilroy", sans-serif;
+    padding: 5px 2px;
+    width: 100%;
+    min-width: 90px;
+    max-width: 90px;
+    margin: 0 auto;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.radio .inp-radio:disabled ~ .radio-text {
+    color: #e0dfdf;
+}
+
+.radio .inp-radio {
+    position: absolute;
+    background: transparent;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-radius: 8px;
+    border: solid 1px #e0dfdf;
+    margin: 0;
+    z-index: -1;
+    appearance: none;
+}
+
+.radio .inp-radio:checked {
+    background: #68ce63;
+    border-color: #68ce63;
+}
+
+.radio .inp-radio:checked ~ .radio-text {
+    color: #fff;
+}
+
+.days-week {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 32px 0 26px;
+    font-size: 14px;
+    color: #000;
+}
+
+.days-week-item {
+    flex: 1;
+    text-align: center;
+}
+
+.slider-dates {
+    padding: 0 30px;
+}
+
+.slick-slider {
+    width: 100%;
+}
+
+.slider-dates .radio {
+    min-width: auto;
+    font-size: 17px;
+}
+
+.slider-dates .inp-radio {
+    border-color: transparent;
+}
+
+
+.slick-slider .slick-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    cursor: pointer;
+    width: 9px;
+    height: 14px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+.slick-slider .slick-prev {
+    left: 0;
+    background: url("image/arrow_calendar2.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.slick-slider .slick-prev:hover {
+    background: url("image/arrow_calendar4.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.slick-slider .slick-next {
+    right: 0;
+    background: url("image/arrow_calendar1.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.slick-slider .slick-next:hover {
+    background: url("image/arrow_calendar3.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+.months {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: #999;
+    font-size: 17px;
+    padding: 0 30px;
+}
+
+.months-item {
+    padding: 0 15px;
+}
+
+.months-item.active {
+    color: #000;
+}
+
+.neiros-booking__form-item-dropdown-menu-body {
+    margin: 32px 0 0;
+}
+
+.neiros-booking__form-item-dropdown-menu-v2 {
+    min-width: 307px;
+    padding: 30px 38px 20px;
+}
+
+@media (max-width: 1200px) {
+    .neiros-booking-datepicker {
+        min-width: 700px;
+    }
+
+    .ui-datepicker-multi-2 .ui-datepicker-group {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 992px) {
+    .neiros-booking__form {
+        flex-wrap: wrap;
+    }
+
+    .neiros-booking__form-item {
+        width: 33.3%;
+        flex: auto;
+        margin: 0 0 20px;
+    }
+
+    .neiros-booking__form button {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto 0;
+    }
+
+    .neiros-booking__form-item-last {
+        margin: 0 0 20px;
+    }
+
+    .neiros-booking__form-dropdown {
+        min-height: 50px;
+    }
+
+    .booking-variable {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 10px;
+    }
+
+    .booking-price {
+        margin: 0 auto 0 0;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .ui-datepicker-multi-2 .ui-datepicker-group {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .neiros-booking-datepicker {
+        min-width: 576px;
+    }
+
+    .booking-price {
+        width: 100%;
+        margin: 0 auto 10px;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .neiros-booking-datepicker {
+        min-width: 310px;
+    }
+
+    .neiros-booking {
+        margin: 30px auto;
+    }
+
+    .months-item {
+        padding: 5px;
+    }
+
+    .months {
+        padding: 0;
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .days-week {
+        padding: 0;
+    }
+    .neiros-booking__form-item-dropdown-menu-footer {
+        padding: 20px 0;
+    }
+
+    .slider-dates .radio {
+        font-size: 14px;
+    }
+
+    .slider-dates {
+        padding: 0;
+    }
+
+    .slider-dates .slick-prev {
+        left: -12px;
+    }
+
+    .slider-dates .slick-next {
+        right: -12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .neiros-booking__form-item {
+        width: 100%;
+        border-bottom: 1px solid #999;
+    }
+
+    .neiros-booking__form-item:before {
+        display: none;
+    }
+
+    .neiros-booking__form-item-dropdown-menu {
+        min-width: 310px;
+    }
+
+    .price-value {
+        font-size: 20px;
+    }
+
+    .neiros-booking__form {
+        border-radius: 20px;
+    }
+
+    .neiros-booking__form button {
+        margin: 0 auto;
+    }
+
+    .booking-price {
+        flex-wrap: wrap;
+    }
+
+    .booking-price > p {
+        max-width: none;
+        margin: 0 auto 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .booking-price .neiros-sale {
+        margin: 0;
+    }
+}

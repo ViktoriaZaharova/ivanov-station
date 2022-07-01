@@ -10,7 +10,15 @@
   .cottages-section .slick-prev {
     left: 20px; }
   .cottages-section .slick-next {
-    right: 20px; } }
+    right: 20px; }
+  .home h1 {
+    font-size: 65px;
+    line-height: normal; }
+    .home h1 br {
+      display: none; }
+  .slogan {
+    font-size: 24px;
+    margin: 25px auto 30px; } }
 
 @media only screen and (max-width: 1300px) {
   .cottages-slider__content {
@@ -22,10 +30,6 @@
     width: 600px;
     min-width: 600px;
     height: 450px; }
-  .home h1 {
-    font-size: 70px; }
-    .home h1 br {
-      display: none; }
   .cottages-section-white .cottages-slider__content {
     background: transparent;
     width: 500px; }
@@ -369,13 +373,7 @@
     min-width: 300px;
     height: 250px; }
   .mb-100 {
-    margin-bottom: 50px; }
-  .section-parallax-video {
-    z-index: 1;
-    height: auto;
-    overflow: hidden; }
-  .fullscreen-bg__video {
-    position: absolute; } }
+    margin-bottom: 50px; } }
 
 @media only screen and (max-width: 480px) {
   .title-wrapper h2 {
