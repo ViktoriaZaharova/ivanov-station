@@ -105,7 +105,6 @@
 
   <section class="home home-classic equipment-rental-home palace-culture-home">
 
-
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -121,8 +120,8 @@
               <div class="neiros-booking__form-item">
                 <div class="neiros-booking__form-dropdown">
                   <p>Дата и время</p>
-                  <div class="neiros-booking__form-dropdown-icon"><img src="img/calendar.png" alt="">
-                    <img src="img/close-red.png" alt="" class="img-close">
+                  <div class="neiros-booking__form-dropdown-icon"><img src="booking-v2/image/calendar.png" alt="">
+                    <img src="booking-v2/image/close-red.png" alt="" class="img-close">
                   </div>
                 </div>
                 <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
@@ -291,8 +290,8 @@
               <div class="neiros-booking__form-item">
                 <div class="neiros-booking__form-dropdown">
                   <p>Количество гостей</p>
-                  <div class="neiros-booking__form-dropdown-icon"><img src="img/user.png" alt="">
-                    <img src="img/close-red.png" alt="" class="img-close">
+                  <div class="neiros-booking__form-dropdown-icon"><img src="booking-v2/image/user.png" alt="">
+                    <img src="booking-v2/image/close-red.png" alt="" class="img-close">
                   </div>
                 </div>
                 <div class="neiros-booking__form-item-dropdown-menu neiros-booking__form-item-dropdown-menu-v2">
@@ -836,26 +835,221 @@
             <form method="post" class="neiros-booking__form">
               <div class="neiros-booking__form-item">
                 <div class="neiros-booking__form-dropdown">
-                  <!--        <input type="text" name="startDate" class="inp-booking">-->
-                  <p>Заезд</p>
-                  <div class="neiros-booking__form-dropdown-icon"><img src="booking/image/calendar.png" alt=""></div>
+                  <p>Дата и время</p>
+                  <div class="neiros-booking__form-dropdown-icon"><img src="booking-v2/image/calendar.png" alt="">
+                    <img src="booking-v2/image/close-red.png" alt="" class="img-close">
+                  </div>
                 </div>
                 <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
                   <h3>Выберите дату заезда</h3>
-                  <div class="datepicker datepicker1"></div>
+                  <div class="neiros-booking__form-item-dropdown-menu-body">
+
+                    <div class="months">
+                      <div class="months-item">июнь 2022 г.</div>
+                      <div class="months-item active">июль 2022 г.</div>
+                      <div class="months-item">август 2022 г.</div>
+                    </div>
+
+                    <div class="days-week">
+                      <div class="days-week-item">пн</div>
+                      <div class="days-week-item">вт</div>
+                      <div class="days-week-item">ср</div>
+                      <div class="days-week-item">чт</div>
+                      <div class="days-week-item">пт</div>
+                      <div class="days-week-item">сб</div>
+                      <div class="days-week-item">вс</div>
+                    </div>
+
+                    <div class="slider-dates">
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">30</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">31</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" checked>
+                          <span class="radio-text">1</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">2</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" disabled>
+                          <span class="radio-text">3</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2" disabled>
+                          <span class="radio-text">4</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">5</span>
+                        </label>
+                      </div>
+                      <div class="slide">
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio2">
+                          <span class="radio-text">6</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="neiros-booking__form-item-dropdown-menu-footer">
+                    <ul class="list-radio">
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">8:00-9:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">9:00-10:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">10:00-12:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">12:00-13:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">13:00-14:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">14:00-15:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">15:00-16:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">16:00-17:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">18:00-19:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">19:00-20:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1">
+                          <span class="radio-text">20:00-21:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">21:00-22:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">22:00-23:00</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input type="radio" class="inp-radio" name="radio1" disabled>
+                          <span class="radio-text">23:00-00:00</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
               <div class="neiros-booking__form-item">
                 <div class="neiros-booking__form-dropdown">
-                  <!--        <input type="text" name="startDate" class="inp-booking">-->
-                  <p>Выезд</p>
-                  <div class="neiros-booking__form-dropdown-icon close-dropdown"><img src="booking/image/close-red.png"
-                                                                                      alt=""></div>
+                  <p>Количество гостей</p>
+                  <div class="neiros-booking__form-dropdown-icon"><img src="booking-v2/image/user.png" alt="">
+                    <img src="booking-v2/image/close-red.png" alt="" class="img-close">
+                  </div>
                 </div>
-                <div class="neiros-booking__form-item-dropdown-menu neiros-booking-datepicker">
-                  <h3>Выберите дату выезда</h3>
-                  <div class="datepicker datepicker1"></div>
+                <div class="neiros-booking__form-item-dropdown-menu neiros-booking__form-item-dropdown-menu-v2">
+                  <h3>Сколько будет гостей?</h3>
+                  <ul class="list-radio">
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">1-3</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">4-6</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">7-9</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">10-12</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">13-15</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" class="inp-radio" name="radio3">
+                        <span class="radio-text">16-18</span>
+                      </label>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
