@@ -97,6 +97,7 @@ $('.btn-close-menu, .overlay').on('click', function () {
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 
+
 // scroll horizontal
 // $(document).ready(function () {
 //     let scrollContainer = document.getElementById("gallery1");
