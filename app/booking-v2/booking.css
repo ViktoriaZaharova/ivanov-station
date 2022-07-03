@@ -50,7 +50,7 @@ p {
 body,
 html {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     overflow-x: hidden;
     position: relative;
     margin: 0;
@@ -934,7 +934,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
         width: 100%;
         margin: 0 auto 10px;
         justify-content: center;
+    }
 
+    .result-booking .btn-group {
+        margin: 0 auto;
     }
 }
 

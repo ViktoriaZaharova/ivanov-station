@@ -46,7 +46,6 @@ $(function () {
 $('.neiros-booking__form-item').on('click', function () {
     $('.neiros-booking__form-item').removeClass('active');
     $(this).addClass('active');
-
 });
 
 $(window).on('load resize', function() {
@@ -54,6 +53,8 @@ $(window).on('load resize', function() {
         $('.neiros-booking__form-item').on('click', function () {
             if ($('.neiros-booking__form-item-last').hasClass('active')) {
                 $('.neiros-booking__dropdown-total').fadeIn();
+            } else {
+                $('.neiros-booking__dropdown-total').fadeOut();
             }
         });
     }
@@ -67,12 +68,10 @@ $(document).mouseup(function (e) {
         $('.neiros-booking__dropdown-total').fadeOut();
         $('.neiros-booking__form-dropdown-icon').removeClass('btn-clear');
     }
-});
-
-
-$('.neiros-booking__form-item').each(function () {
-    $(this).find('.datepicker').click(function () {
-        console.log(1);
-        // $(this).parents('.neiros-booking__form-item').find('.neiros-booking__form-dropdown-icon').addClass('btn-clear');
-    });
+    if ($('.neiros-booking__form-item-last').hasClass('active')) {
+        $('.neiros-booking__dropdown-total').fadeIn();
+    }
+    else {
+        $('.neiros-booking__dropdown-total').fadeOut();
+    }
 });

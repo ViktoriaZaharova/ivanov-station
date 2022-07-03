@@ -36,7 +36,6 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -177,7 +176,7 @@ textarea {
 .inp-checkbox {
   display: none; }
   .inp-checkbox:checked ~ .checkbox-custom:before {
-    background: url("../img/check-grey.png") no-repeat center;
+    background: url("../img/check.png") no-repeat center;
       background-size: 100%; }
 
 label {
@@ -413,6 +412,32 @@ a.color-white:hover {
 
 .slick-disabled {
   opacity: 0; }
+
+.slick-dots {
+  width: 100%;
+  height: 6px;
+  max-width: 1170px;
+  margin: 0 auto;
+  list-style: none;
+  border-radius: 3px;
+  background: rgba(41, 43, 47, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .slick-dots li {
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    width: 100px;
+    height: 6px; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: #292b2f;
+    border-radius: 3px; }
 
 .btn-group {
   display: -webkit-box;

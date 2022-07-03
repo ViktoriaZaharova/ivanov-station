@@ -10,13 +10,12 @@ $(document).ready(function () { //плавный скролл
     });
 });
 
-
-$('.cottages-slider1').each(function() {
+$('.cottages-slider1').each(function () {
     $(this).slick({
         slidesToShow: 3,
         variableWidth: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
+        prevArrow: '<button type="button" class="slick-next"><img src="img/left-arrow.png" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-prev"><img src="img/right-arrow.png" alt=""></button>',
         // infinite: false,
         responsive: [
             {
@@ -32,7 +31,7 @@ $('.cottages-slider1').each(function() {
 });
 
 
-$('.cottages-slider2').each(function() {
+$('.cottages-slider2').each(function () {
     $(this).slick({
         slidesToShow: 3,
         variableWidth: true,
@@ -53,15 +52,22 @@ $('.cottages-slider2').each(function() {
     });
 });
 
+$('.horizontal-scroll-wrapper').slick({
+    slidesToShow: 3,
+    variableWidth: true,
+    arrows: false,
+    dots: true,
+});
+
 
 // mobile menu
 $('.btn-burger').on('click', function () {
     $('.overlay').fadeIn();
-   $('.menu-wrapper').fadeToggle();
+    $('.menu-wrapper').fadeToggle();
 });
 
 $('.btn-close-menu, .overlay').on('click', function () {
-   $('.menu-wrapper').fadeOut();
+    $('.menu-wrapper').fadeOut();
     $('.overlay').fadeOut();
 });
 
@@ -70,19 +76,19 @@ $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 
 // scroll horizontal
-$(document).ready(function () {
-    let scrollContainer = document.getElementById("gallery1");
-
-    scrollContainer.addEventListener("wheel", (evt) => {
-        evt.preventDefault();
-        scrollContainer.scrollLeft += evt.deltaY;
-    });
-
-    let scrollContainer2 = document.getElementById("gallery2");
-
-    scrollContainer2.addEventListener("wheel", (evt) => {
-        evt.preventDefault();
-        scrollContainer2.scrollLeft += evt.deltaY;
-    });
-});
-
+// $(document).ready(function () {
+//     let scrollContainer = document.getElementById("gallery1");
+//
+//     scrollContainer.addEventListener("wheel", (evt) => {
+//         evt.preventDefault();
+//         scrollContainer.scrollLeft += evt.deltaY;
+//     });
+//
+//     let scrollContainer2 = document.getElementById("gallery2");
+//
+//     scrollContainer2.addEventListener("wheel", (evt) => {
+//         evt.preventDefault();
+//         scrollContainer2.scrollLeft += evt.deltaY;
+//     });
+// });
+//
