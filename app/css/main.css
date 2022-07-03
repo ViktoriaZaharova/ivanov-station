@@ -891,7 +891,7 @@
   width: 800px;
   min-width: 800px;
   height: 600px;
-  margin: 30px 40px;
+  margin: 40px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,7 +923,7 @@
     transition: .3s ease;
     display: none; }
   .gallery-box:hover {
-    margin-top: -10px;
+    margin-top: 15px;
     color: #fff; }
     .gallery-box:hover img {
       opacity: .6; }

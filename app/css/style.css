@@ -439,6 +439,29 @@ a.color-white:hover {
     background: #292b2f;
     border-radius: 3px; }
 
+.progress {
+  width: calc(100% - 30px);
+  height: 6px;
+  max-width: 1170px;
+  list-style: none;
+  border-radius: 3px;
+  background: rgba(41, 43, 47, 0.2);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background-size .4s ease-in-out;
+  transition: background-size .4s ease-in-out;
+  margin: 0 auto 59px; }
+
+.progress-bg {
+  background: #292b2f;
+  border-radius: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+
 .btn-group {
   display: -webkit-box;
   display: -ms-flexbox;

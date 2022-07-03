@@ -55,9 +55,31 @@ $('.cottages-slider2').each(function () {
 $('.horizontal-scroll-wrapper').slick({
     slidesToShow: 3,
     variableWidth: true,
+    centerMode: true,
     arrows: false,
-    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
+
+$('.horizontal-scroll-wrapper').each(function () {
+    function setProgress(index) {
+        const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+
+        $progressBar
+            .css('width', calc + '%')
+            .attr('aria-valuenow', calc);
+    }
+
+    const $slider = $(this);
+    const $progressBar = $(this).siblings('.progress').find('.progress-bg');
+
+    $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        setProgress(nextSlide);
+
+    });
+    setProgress(0);
+});
+
 
 
 // mobile menu

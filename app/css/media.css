@@ -213,7 +213,9 @@
     .menu-footer:last-child {
       margin: 0; }
   .mb-52 {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .progress {
+    margin: 0 auto 30px; } }
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -301,7 +303,9 @@
   .cottages-section-white .cottages-slider__content {
     width: 100%; }
   .category-classic-section {
-    padding: 50px 0 0; } }
+    padding: 50px 0 0; }
+  .instagram-history {
+    padding: 60px 0 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
