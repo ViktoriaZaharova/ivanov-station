@@ -75,7 +75,8 @@
 .advantages {
   padding: 186px 0 152px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -1; }
   .advantages h2 {
     margin: 0 auto 33px;
     max-width: 675px;
