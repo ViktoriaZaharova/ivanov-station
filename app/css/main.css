@@ -253,8 +253,7 @@
 
 .cottages-slider {
   position: relative;
-  z-index: 2;
-  padding: 0 0 0 15px; }
+  z-index: 2; }
   .cottages-slider .slide {
     margin: 20px 40px 20px 0; }
   .cottages-slider:after {
@@ -363,7 +362,7 @@
 
 .cottages-slider__content {
   width: 472px;
-  padding: 0 21px 0 0;
+  padding: 0 21px 0 15px;
   position: relative; }
   .cottages-slider__content h3 {
     font-size: 26px;
