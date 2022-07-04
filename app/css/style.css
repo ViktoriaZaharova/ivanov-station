@@ -175,9 +175,11 @@ textarea {
 
 .inp-checkbox {
   display: none; }
-  .inp-checkbox:checked ~ .checkbox-custom:before {
-    background: url("../img/check.png") no-repeat center;
-      background-size: 100%; }
+  .inp-checkbox:checked ~ .checkbox-custom {
+    background: #68ce63; }
+    .inp-checkbox:checked ~ .checkbox-custom:before {
+      background: url("../img/check.png") no-repeat center;
+        background-size: 100%; }
 
 label {
   display: block;

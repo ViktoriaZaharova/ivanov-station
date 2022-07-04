@@ -2,6 +2,7 @@
 .home {
   padding: 245px 0;
   position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,7 +600,9 @@
 /*==========  section contacts end  ==========*/
 /*==========  section contacts page  ==========*/
 .contacts-page {
-  padding: 127px 0; }
+  padding: 127px 0;
+  background: url("../img/contacts-bg.jpg") no-repeat center;
+    background-size: cover; }
 
 .contacts-information {
   padding: 90px 0 0; }
@@ -652,6 +655,10 @@
 
 /*==========  section contacts page end  ==========*/
 /*==========  section gallery-home  ==========*/
+.gallery-home {
+  background: url("../img/home-bg.jpg") no-repeat center;
+    background-size: cover; }
+
 .gallery-section {
   padding: 80px 0 100px;
   height: auto; }
@@ -968,8 +975,12 @@
   padding: 78px 0 30px; }
 
 /*==========  page classic end  ==========*/
-/*==========  section equipment rental  ==========*/
-/*==========  section equipment rental end  ==========*/
+/*==========  section booking ==========*/
+.booking-home {
+  background: url("../img/home-bg.jpg") no-repeat center;
+    background-size: cover; }
+
+/*==========  section booking end  ==========*/
 /*==========  section equipment rental  ==========*/
 /*==========  section equipment rental end  ==========*/
 /*==========  section equipment rental  ==========*/
