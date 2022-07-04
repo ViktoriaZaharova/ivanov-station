@@ -70,8 +70,17 @@ $(document).mouseup(function (e) {
     }
     if ($('.neiros-booking__form-item-last').hasClass('active')) {
         $('.neiros-booking__dropdown-total').fadeIn();
+
     }
     else {
         $('.neiros-booking__dropdown-total').fadeOut();
+    }
+});
+
+$('.neiros-booking__form-item input:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('.result-booking').fadeIn();
+    } else {
+        $('.result-booking').fadeOut();
     }
 });

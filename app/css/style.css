@@ -277,14 +277,7 @@ ul, ol {
 
 .wrapper {
   padding: 70px 0 0;
-  width: 100%;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll; }
+  width: 100%; }
 
 .container {
   max-width: 1200px; }

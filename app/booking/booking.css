@@ -653,6 +653,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
     background-color: #fff;
     padding: 10px 0;
     color: #000;
+    display: none;
 }
 
 .booking-variable {

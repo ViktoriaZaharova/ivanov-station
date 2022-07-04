@@ -37,3 +37,11 @@ $('.neiros-booking__form-item').each(function () {
         $(this).parents('.neiros-booking__form-item').find('.neiros-booking__form-dropdown-icon').addClass('btn-clear');
     });
 });
+
+$('.neiros-booking__form-item input:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('.result-booking').fadeIn();
+    } else {
+        $('.result-booking').fadeOut();
+    }
+});
