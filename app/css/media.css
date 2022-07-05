@@ -224,11 +224,14 @@
     padding: 170px 0; }
     .home h1 {
       font-size: 50px;
-      max-width: 500px; }
+      max-width: 550px; }
   .cottages-section {
     margin: 0 0 50px; }
     .cottages-section .slick-prev {
       opacity: 1; }
+    .cottages-section .slick-next img {
+      -webkit-transform: none;
+              transform: none; }
   .cottages-section-reverse .slick-arrow {
     opacity: 1; }
   .cottages-section-reverse .cottages-slider {

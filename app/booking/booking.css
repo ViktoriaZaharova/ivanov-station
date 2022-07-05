@@ -743,6 +743,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
     .booking-price {
         margin: 0 auto 0 0;
     }
+
+    .neiros-booking__dropdown-total {
+        top: calc(100% + 360px);
+    }
 }
 
 

@@ -23,6 +23,8 @@ $('.cottages-slider1').each(function () {
                 settings: {
                     slidesToShow: 1,
                     variableWidth: false,
+                    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png" alt=""></button>',
+                    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png" alt=""></button>',
                 }
             }
 

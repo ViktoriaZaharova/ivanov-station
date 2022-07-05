@@ -46,19 +46,13 @@ $(function () {
 $('.neiros-booking__form-item').on('click', function () {
     $('.neiros-booking__form-item').removeClass('active');
     $(this).addClass('active');
-});
-
-$(window).on('load resize', function() {
-    if ($(window).width() > 992) {
-        $('.neiros-booking__form-item').on('click', function () {
-            if ($('.neiros-booking__form-item-last').hasClass('active')) {
-                $('.neiros-booking__dropdown-total').fadeIn();
-            } else {
-                $('.neiros-booking__dropdown-total').fadeOut();
-            }
-        });
+    if ($('.neiros-booking__form-item-last').hasClass('active')) {
+        $('.neiros-booking__dropdown-total').fadeIn();
+    } else {
+        $('.neiros-booking__dropdown-total').fadeOut();
     }
 });
+
 
 $(document).mouseup(function (e) {
     var div = $(".neiros-booking__form-item");
@@ -80,7 +74,9 @@ $(document).mouseup(function (e) {
 $('.neiros-booking__form-item input:checkbox').change(function(){
     if($(this).is(":checked")) {
         $('.result-booking').fadeIn();
+        $('.neiros-booking__dropdown-total').fadeIn();
     } else {
         $('.result-booking').fadeOut();
+        $('.neiros-booking__dropdown-total').fadeOut();
     }
 });
