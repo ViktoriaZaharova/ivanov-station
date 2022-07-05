@@ -600,7 +600,7 @@
 /*==========  section contacts page  ==========*/
 .contacts-page {
   padding: 127px 0;
-  background: url("../img/contacts-bg.jpg") no-repeat center;
+  background: url("../img/contacts-bg.jpg") no-repeat center top;
     background-size: cover;
     background-attachment: fixed; }
   .contacts-page:before {
@@ -665,7 +665,7 @@
 /*==========  section contacts page end  ==========*/
 /*==========  section gallery-home  ==========*/
 .gallery-home {
-  background: url("../img/home-bg.jpg") no-repeat center;
+  background: url("../img/home-bg.jpg") no-repeat center top;
     background-size: cover;
     background-attachment: fixed; }
   .gallery-home:before {
