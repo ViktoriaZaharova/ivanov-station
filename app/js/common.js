@@ -61,7 +61,7 @@ $('.horizontal-scroll-wrapper').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    infinite: false
+    // infinite: false
 });
 
 $('.horizontal-scroll-wrapper').each(function () {
